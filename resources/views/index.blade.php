@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel Angular Material Starter</title>
+    <title>Onsigbaar</title>
 
     <meta name="theme-color" content="#0690B7">
 
@@ -20,9 +20,7 @@
 <body>
 
     <app-shell>
-        <div id="app-shell-header">
-            <img src="img/icons/logo.svg" width="171" height="41">
-        </div>
+        <div id="app-shell-header"></div>
         <div id="app-shell-content"></div>
     </app-shell>
 
@@ -32,15 +30,14 @@
 
     <script>
     (function(){
-        var link = document.createElement("link");
+        var link  = document.createElement("link");
         link.href = "{!! elixir('css/final.css') !!}";
         link.type = "text/css";
-        link.rel = "stylesheet";
+        link.rel  = "stylesheet";
         document.body.appendChild(link);
     })();
     </script>
 
     <script src="{!! elixir('js/final.js') !!}" async></script>
-
 </body>
 </html>
