@@ -1,0 +1,15 @@
+{
+    "name": "Onsigbaar",
+    "alias": "onsigbaar",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Components\\Onsigbaar\\Providers\\OnsigbaarServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}
