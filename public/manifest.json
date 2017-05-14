@@ -2,8 +2,8 @@
   "lang": "en-us",
   "background_color": "#FFFFFF",
   "theme_color": "#0690B7",
-  "name": "Laravel & Angular",
-  "short_name": "Laravel & Angular",
+  "name": "Onsigbaar",
+  "short_name": "Onsigbaar",
   "display": "standalone",
   "start_url": "/?homescreen=1",
   "icons": [
