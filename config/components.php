@@ -27,12 +27,12 @@ return [
         'path'         => base_path(__DIR__ . '/../src/Commands/stubs'),
         'files'        => [
             'start'           => 'start.php',
-            'routes'          => 'Http/routes.php',
+            'routes'          => 'src/Http/routes.php',
             'json'            => 'component.json',
             'views/index'     => 'Resources/views/index.blade.php',
             'views/master'    => 'Resources/views/layouts/master.blade.php',
             'scaffold/config' => 'Config/config.php',
-            'composer'        => 'composer.json'
+            'composer'        => 'composer.json',
         ],
         'replacements' => [
             'start'           => ['LOWER_NAME'],
@@ -47,9 +47,9 @@ return [
                 'VENDOR',
                 'AUTHOR_NAME',
                 'AUTHOR_EMAIL',
-                'COMPONENT_NAMESPACE'
-            ]
-        ]
+                'COMPONENT_NAMESPACE',
+            ],
+        ],
     ],
     'paths' => [
         /*
@@ -94,7 +94,7 @@ return [
         |
         */
 
-        'seed' => base_path('database/seeds'),
+        'seed'      => base_path('database/seeds'),
         /*
         |--------------------------------------------------------------------------
         | Generator path
@@ -103,28 +103,27 @@ return [
         | Here you may update the components generator path.
         |
         */
-
         'generator' => [
             'assets'        => 'Resources/assets',
             'config'        => 'Config',
-            'command'       => 'Console',
-            'event'         => 'Events',
-            'listener'      => 'Events/Handlers',
+            'command'       => 'src/Console',
+            'event'         => 'src/Events',
+            'listener'      => 'src/Events/Handlers',
             'migration'     => 'Database/Migrations',
-            'model'         => 'Models',
-            'repository'    => 'Repositories',
+            'model'         => 'src/Models',
+            'repository'    => 'src/Repositories',
             'seed'          => 'Database/Seeds',
-            'controller'    => 'Http/Controllers',
-            'middleware'    => 'Http/Middleware',
-            'request'       => 'Http/Requests',
-            'provider'      => 'Providers',
+            'controller'    => 'src/Http/Controllers',
+            'middleware'    => 'src/Http/Middleware',
+            'request'       => 'src/Http/Requests',
+            'provider'      => 'src/Providers',
             'lang'          => 'Resources/lang',
             'views'         => 'Resources/views',
             'test'          => 'Tests',
-            'jobs'          => 'Jobs',
-            'emails'        => 'Emails',
-            'notifications' => 'Notifications'
-        ]
+            'jobs'          => 'src/Jobs',
+            'emails'        => 'src/Emails',
+            'notifications' => 'src/Notifications',
+        ],
     ],
     /*
     |--------------------------------------------------------------------------
@@ -139,8 +138,8 @@ return [
     'scan' => [
         'enabled' => true,
         'paths'   => [
-            base_path('vendor/*/*')
-        ]
+            base_path('vendor/*/*'),
+        ],
     ],
     /*
     |--------------------------------------------------------------------------
@@ -155,8 +154,8 @@ return [
         'vendor' => 'componentsv',
         'author' => [
             'name'  => 'anonymoussc',
-            'email' => '50c5ac69@opayq.com'
-        ]
+            'email' => '50c5ac69@opayq.com',
+        ],
     ],
     /*
     |--------------------------------------------------------------------------
@@ -169,7 +168,7 @@ return [
     'cache'    => [
         'enabled'  => false,
         'key'      => 'componentsv',
-        'lifetime' => 60
+        'lifetime' => 60,
     ],
     /*
     |--------------------------------------------------------------------------
@@ -179,7 +178,7 @@ return [
     |--------------------------------------------------------------------------
     */
     'register' => [
-        'translations' => true
+        'translations' => true,
     ],
     /*
     |--------------------------------------------------------------------------
@@ -189,6 +188,6 @@ return [
     |--------------------------------------------------------------------------
     */
     'merge'    => [
-        'published-assets' => true
+        'published-assets' => true,
     ],
 ];
