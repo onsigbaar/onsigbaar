@@ -15,7 +15,7 @@
     "laravelangular/generators": "2.7.*",
     "irazasyed/jwt-auth-guard" : "^1.0",
     "barryvdh/laravel-cors"    : "^0.8.2",
-    "consigliere/foundation"   : "0.2.*"
+    "onsigbaar/foundation"     : "0.1.*"
   },
   "require-dev" : {
     "fzaninotto/faker"    : "~1.4",
