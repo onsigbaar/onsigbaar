@@ -30,14 +30,15 @@
 
     <script>
     (function(){
-        var link  = document.createElement("link");
+        var link = document.createElement("link");
         link.href = "{!! elixir('css/final.css') !!}";
         link.type = "text/css";
-        link.rel  = "stylesheet";
+        link.rel = "stylesheet";
         document.body.appendChild(link);
     })();
     </script>
 
     <script src="{!! elixir('js/final.js') !!}" async></script>
+
 </body>
 </html>
