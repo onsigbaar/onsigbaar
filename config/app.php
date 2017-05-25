@@ -184,6 +184,7 @@ return [
 
         // Component
         Onsigbaar\Foundation\FoundationServiceProvider::class,
+        App\Components\Onsigbaar\Providers\OnsigbaarServiceProvider::class,
 
     ],
 

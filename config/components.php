@@ -151,7 +151,7 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'componentsv',
+        'vendor' => 'consigliere',
         'author' => [
             'name'  => 'anonymoussc',
             'email' => '50c5ac69@opayq.com',
@@ -167,7 +167,7 @@ return [
     */
     'cache'    => [
         'enabled'  => false,
-        'key'      => 'componentsv',
+        'key'      => 'consigliere',
         'lifetime' => 60,
     ],
     /*
