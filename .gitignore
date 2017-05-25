@@ -12,5 +12,8 @@ Homestead.yaml
 /public/css
 /public/build
 /public/views
+/public/storage
 /public/service-worker.js
-/components
+/public/mix-manifest.json
+
+/public/vendor
