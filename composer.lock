@@ -234,16 +234,16 @@
         },
         {
             "name": "consigliere/onsigbaar",
-            "version": "v0.1.1",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Onsigbaar.git",
-                "reference": "9e20b0b4442a893e29f8c010250a409ef6c5f16e"
+                "reference": "a4cf8debab613a434a03b42b003d1534fc50f4f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Onsigbaar/zipball/9e20b0b4442a893e29f8c010250a409ef6c5f16e",
-                "reference": "9e20b0b4442a893e29f8c010250a409ef6c5f16e",
+                "url": "https://api.github.com/repos/consigliere/Onsigbaar/zipball/a4cf8debab613a434a03b42b003d1534fc50f4f3",
+                "reference": "a4cf8debab613a434a03b42b003d1534fc50f4f3",
                 "shasum": ""
             },
             "require": {
@@ -264,7 +264,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-05-25T13:16:36+00:00"
+            "time": "2017-05-25T16:52:00+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
