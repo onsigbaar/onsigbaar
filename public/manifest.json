@@ -1,16 +1,16 @@
 {
-  "lang": "en-us",
+  "lang"            : "en-us",
   "background_color": "#FFFFFF",
-  "theme_color": "#0690B7",
-  "name": "Onsigbaar",
-  "short_name": "Onsigbaar",
-  "display": "standalone",
-  "start_url": "/?homescreen=1",
-  "icons": [
+  "theme_color"     : "#0690B7",
+  "name"            : "Onsigbaar",
+  "short_name"      : "Onsigbaar",
+  "display"         : "standalone",
+  "start_url"       : "/?homescreen=1",
+  "icons"           : [
     {
-      "src": "img/icon.png",
+      "src"  : "img/icon.png",
       "sizes": "198x198",
-      "type": "image/png"
+      "type" : "image/png"
     }
   ]
 }
