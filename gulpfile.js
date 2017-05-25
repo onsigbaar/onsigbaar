@@ -66,8 +66,8 @@ elixir(mix => {
 
 /*------------------------------------------------------------------------------------------------*/
 
-// var base = 'app/Components', fromComponents = 'Gaboot';
-var base = 'vendor', fromComponents = 'consigliere/gaboot';
+// let base = 'app', fromComponents = 'Components/Onsigbaar';
+let base = 'vendor', fromComponents = 'consigliere/onsigbaar';
 
 // Delete entire folder storage\app\public
 gulp.task('clean-app-public', function () {
@@ -77,7 +77,7 @@ gulp.task('clean-app-public', function () {
 });
 
 // Copying view resources
-gulp.task('cp-gb', ['clean-app-public'], function () {
+gulp.task('cp-gb', function () {
 
     gulp.src(['./' + base + '/' + fromComponents + '/Publish/js/*.*']).pipe(gulp.dest('./public/js/'));
     gulp.src(['./' + base + '/' + fromComponents + '/Publish/css/*.*']).pipe(gulp.dest('./public/css/'));
