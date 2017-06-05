@@ -14,7 +14,7 @@ let tasks = {
 };
 
 function processing() {
-    return gulp.src([config.baseDirectory + '/' + config.fromComponents + '/Database/Seeds/SettingsTableSeeder.php']).pipe(gulp.dest('./database/seeds/'));
+    return gulp.src([config.baseDirectory + '/' + config.fromComponent + '/Database/Seeds/SettingsTableSeeder.php']).pipe(gulp.dest('./database/seeds/'));
 }
 
 module.exports = tasks;
