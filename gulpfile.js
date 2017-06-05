@@ -1,19 +1,23 @@
 'use strict';
 
 const elixir = require('laravel-elixir');
-let del      = require('del');
 
 require('laravel-elixir-eslint');
 require('./tasks/swPrecache.task.js');
 require('./tasks/bower.task.js');
+require('dotenv').config();
 
-let run = require('gulp-run-command').default;
+let gulp = require('gulp');
+// eslint-disable-next-line no-unused-vars
+let run  = require('gulp-run-command').default;
+// eslint-disable-next-line no-unused-vars
+let del  = require('del');
 
 // setting assets paths
-elixir.config.assetsPath        = './';
-elixir.config.css.folder        = 'components';
-elixir.config.css.sass.folder   = 'components';
-elixir.config.js.folder         = 'components';
+elixir.config.assetsPath      = './';
+elixir.config.css.folder      = 'components';
+elixir.config.css.sass.folder = 'components';
+elixir.config.js.folder       = 'components';
 
 /*
  |--------------------------------------------------------------------------
@@ -26,18 +30,19 @@ elixir.config.js.folder         = 'components';
  |
  */
 
-let assets = [
+let assets     = [
         'public/js/final.js',
         'public/css/final.css'
     ],
-    scripts = [
+    scripts    = [
         'public/js/vendor.js', 'public/js/app.js'
     ],
-    styles = [
+    styles     = [
         // for some reason, ./ prefix here works fine!
         // it is needed to override elixir.config.css.folder for styles mixin
         './public/css/vendor.css', './public/css/app.css'
     ],
+    // eslint-disable-next-line no-unused-vars
     karmaJsDir = [
         'public/js/vendor.js',
         'node_modules/angular-mocks/angular-mocks.js',
@@ -59,47 +64,13 @@ elixir(mix => {
         .version(assets)
         .swPrecache();
 
-    //enable front-end tests by adding the below task
+    // enable front-end tests by adding the below task
     // .karma({jsDir: karmaJsDir});
 });
 
 
-/*------------------------------------------------------------------------------------------------*/
-
-// let base = 'app', fromComponents = 'Components/Onsigbaar';
-let base = 'vendor', fromComponents = 'consigliere/onsigbaar';
-
-// Delete entire folder storage\app\public
-gulp.task('clean-app-public', function () {
-    return del(['./storage/app/public/']).then(paths => {
-        console.log('Deleting public app storage:\n', paths.join('\n'));
-    });
-});
-
-// Copying view resources
-gulp.task('cp-gb', function () {
-
-    gulp.src(['./' + base + '/' + fromComponents + '/Publish/js/*.*']).pipe(gulp.dest('./public/js/'));
-    gulp.src(['./' + base + '/' + fromComponents + '/Publish/css/*.*']).pipe(gulp.dest('./public/css/'));
-
-    return gulp.src(['./' + base + '/' + fromComponents + '/Publish/storage/app/public/**/*.*']).pipe(gulp.dest('./storage/app/public/'));
-});
-
-gulp.task('rw-assets', function () {
-    return gulp.src(['./' + base + '/' + fromComponents + '/Publish/vendor/voyager/public/vendor/tcg/voyager/assets/**/**/*.*']).pipe(gulp.dest('./public/vendor/tcg/voyager/assets/'));
-});
-
-gulp.task('rw-settingseeder', function () {
-    return gulp.src(['./' + base + '/' + fromComponents + '/Database/Seeds/SettingsTableSeeder.php']).pipe(gulp.dest('./database/seeds/'));
-});
-
-gulp.task('app-install', function () {
-
-    gulp.src(['./' + base + '/' + fromComponents + '/Publish/js/*.*']).pipe(gulp.dest('./public/js/'));
-    gulp.src(['./' + base + '/' + fromComponents + '/Publish/css/*.*']).pipe(gulp.dest('./public/css/'));
-    gulp.src(['./' + base + '/' + fromComponents + '/Publish/vendor/passport/database/migrations/*.*']).pipe(gulp.dest('./database/migrations/'));
-    gulp.src(['./' + base + '/' + fromComponents + '/Publish/vendor/voyager/database/migrations/*.*']).pipe(gulp.dest('./database/migrations/'));
-    gulp.src(['./' + base + '/' + fromComponents + '/Publish/vendor/voyager/database/seeds/*.*']).pipe(gulp.dest('./database/seeds/'));
-
-    return gulp.src(['./' + base + '/' + fromComponents + '/Publish/storage/app/public/**/*.*']).pipe(gulp.dest('./storage/app/public/'));
-});
+gulp.task('app-install', require('./tasks/gulp/app-install.js').processing);
+gulp.task('clean-app-public', require('./tasks/gulp/clean-app-public.js').processing);
+gulp.task('copy-publish', require('./tasks/gulp/copy-publish.js').processing);
+gulp.task('rewrite-assets', require('./tasks/gulp/rewrite-assets.js').processing);
+gulp.task('rewrite-setting-seeder', require('./tasks/gulp/rewrite-setting-seeder.js').processing);
