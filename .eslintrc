@@ -1,23 +1,27 @@
 {
-  "extends": "eslint:recommended",
-  "plugins": ["angular"],
-  "rules": {
+  "extends"      : "eslint:recommended",
+  "plugins"      : [
+    "angular"
+  ],
+  "rules"        : {
     "angular/no-service-method": 0
   },
-  "env": {
-    "es6": true,
+  "env"          : {
+    "es6"    : true,
     "browser": true,
     "jasmine": true
   },
-  "ecmaFeatures": {
+  "ecmaFeatures" : {
     "modules": true
   },
-  "globals": {
+  "globals"      : {
     "angular": true,
-    "module": true,
-    "inject": true
+    "module" : true,
+    "inject" : true,
+    "require": true,
+    "console": true
   },
   "parserOptions": {
-    "sourceType": "module",
+    "sourceType": "module"
   }
 }
