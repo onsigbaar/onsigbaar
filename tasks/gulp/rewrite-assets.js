@@ -14,7 +14,7 @@ let tasks = {
 };
 
 function processing() {
-    return gulp.src([config.baseDirectory + '/' + config.fromComponents + '/Publish/vendor/voyager/public/vendor/tcg/voyager/assets/**/**/*.*']).pipe(gulp.dest('./public/vendor/tcg/voyager/assets/'));
+    return gulp.src([config.baseDirectory + '/' + config.fromComponent + '/Publish/vendor/voyager/public/vendor/tcg/voyager/assets/**/**/*.*']).pipe(gulp.dest('./public/vendor/tcg/voyager/assets/'));
 }
 
 module.exports = tasks;
