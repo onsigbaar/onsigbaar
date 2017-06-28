@@ -25,7 +25,8 @@ return [
         'path'         => base_path(__DIR__ . '/../src/Commands/stubs'),
         'files'        => [
             'start'           => 'start.php',
-            'routes'          => 'src/Http/routes.php',
+            'routes/api'      => 'Routes/api.php',
+            'routes/web'      => 'Routes/web.php',
             'json'            => 'component.json',
             'views/index'     => 'Resources/views/index.blade.php',
             'views/master'    => 'Resources/views/layouts/master.blade.php',
@@ -34,7 +35,8 @@ return [
         ],
         'replacements' => [
             'start'           => ['LOWER_NAME'],
-            'routes'          => ['LOWER_NAME', 'STUDLY_NAME', 'COMPONENT_NAMESPACE'],
+            'routes/api'      => ['LOWER_NAME', 'STUDLY_NAME', 'COMPONENT_NAMESPACE'],
+            'routes/web'      => ['LOWER_NAME', 'STUDLY_NAME', 'COMPONENT_NAMESPACE'],
             'json'            => ['LOWER_NAME', 'STUDLY_NAME', 'COMPONENT_NAMESPACE'],
             'views/index'     => ['LOWER_NAME'],
             'views/master'    => ['STUDLY_NAME'],

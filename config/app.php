@@ -183,7 +183,7 @@ return [
         App\Providers\ResponseMacroServiceProvider::class,
 
         // Component
-        Onsigbaar\Foundation\FoundationServiceProvider::class,
+        Onsigbaar\Foundation\Providers\FoundationServiceProvider::class,
         App\Components\Onsigbaar\Providers\OnsigbaarServiceProvider::class,
 
     ],

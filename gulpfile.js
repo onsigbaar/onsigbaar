@@ -69,8 +69,16 @@ elixir(mix => {
 });
 
 
+<<<<<<< Updated upstream
 gulp.task('app-install', require('./tasks/gulp/app-install.js').processing);
 gulp.task('clean-app-public', require('./tasks/gulp/clean-app-public.js').processing);
 gulp.task('copy-publish', require('./tasks/gulp/copy-publish.js').processing);
 gulp.task('rewrite-assets', require('./tasks/gulp/rewrite-assets.js').processing);
 gulp.task('rewrite-setting-seeder', require('./tasks/gulp/rewrite-setting-seeder.js').processing);
+=======
+gulp.task('app-install', require('./tasks/run/app-install.js').processing);
+gulp.task('clean-app-public', require('./tasks/run/clean-app-public.js').processing);
+gulp.task('copy-publish', require('./tasks/run/copy-publish.js').processing);
+gulp.task('rewrite-assets', require('./tasks/run/rewrite-assets.js').processing);
+gulp.task('rewrite-setting-seeder', require('./tasks/run/rewrite-setting-seeder.js').processing);
+>>>>>>> Stashed changes
