@@ -1,5 +1,5 @@
 {
-  "staticFileGlobs": [
+  "staticFileGlobs"              : [
     "public/fonts/lato-light-webfont.woff",
     "public/fonts/lato-light-webfont.woff2",
     "public/fonts/lato-regular-webfont.woff",
@@ -8,20 +8,25 @@
     "public/build/css/final-*.css",
     "public/img/**/*.{png,jpg,gif,svg}"
   ],
-  "stripPrefix": "public",
+  "stripPrefix"                  : "public",
   "maximumFileSizeToCacheInBytes": 5242880,
-  "runtimeCaching": [{
-    "urlPattern": "'/'",
-    "handler": "cacheFirst"
-  }, {
-    "urlPattern": "'https://fonts.googleapis.com/'",
-    "handler": "cacheFirst"
-  }, {
-    "urlPattern": "'https://fonts.gstatic.com/'",
-    "handler": "cacheFirst"
-  }, {
-    "urlPattern": "'https://ghbtns.com/'",
-    "handler": "cacheFirst"
-  }],
-  "handleFetch": true
+  "runtimeCaching"               : [
+    {
+      "urlPattern": "'/'",
+      "handler"   : "cacheFirst"
+    },
+    {
+      "urlPattern": "'https://fonts.googleapis.com/'",
+      "handler"   : "cacheFirst"
+    },
+    {
+      "urlPattern": "'https://fonts.gstatic.com/'",
+      "handler"   : "cacheFirst"
+    },
+    {
+      "urlPattern": "'https://ghbtns.com/'",
+      "handler"   : "cacheFirst"
+    }
+  ],
+  "handleFetch"                  : true
 }
