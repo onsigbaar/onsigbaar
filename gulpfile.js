@@ -31,41 +31,41 @@ elixir.config.js.folder       = 'components';
  */
 
 let assets     = [
-        'public/js/final.js',
-        'public/css/final.css'
+      'public/js/final.js',
+      'public/css/final.css'
     ],
     scripts    = [
-        'public/js/vendor.js', 'public/js/app.js'
+      'public/js/vendor.js', 'public/js/app.js'
     ],
     styles     = [
-        // for some reason, ./ prefix here works fine!
-        // it is needed to override elixir.config.css.folder for styles mixin
-        './public/css/vendor.css', './public/css/app.css'
+      // for some reason, ./ prefix here works fine!
+      // it is needed to override elixir.config.css.folder for styles mixin
+      './public/css/vendor.css', './public/css/app.css'
     ],
     // eslint-disable-next-line no-unused-vars
     karmaJsDir = [
-        'public/js/vendor.js',
-        'node_modules/angular-mocks/angular-mocks.js',
-        'node_modules/ng-describe/dist/ng-describe.js',
-        'public/js/app.js',
-        'tests/components/**/*.spec.js'
+      'public/js/vendor.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'node_modules/ng-describe/dist/ng-describe.js',
+      'public/js/app.js',
+      'tests/components/**/*.spec.js'
     ];
 
 elixir(mix => {
-    mix.bower()
-        .copy('components/app/**/*.html', 'public/views/app/')
-        .copy('components/dialogs/**/*.html', 'public/views/dialogs/')
-        .webpack('index.main.js', 'public/js/app.js')
-        .sass(['**/*.scss', 'critical.scss'], 'public/css')
-        .sass('critical.scss', 'public/css/critical.css')
-        .styles(styles, 'public/css/final.css')
-        .eslint('components/**/*.js')
-        .combine(scripts, 'public/js/final.js')
-        .version(assets)
-        .swPrecache();
+  mix.bower()
+    .copy('components/app/**/*.html', 'public/views/app/')
+    .copy('components/dialogs/**/*.html', 'public/views/dialogs/')
+    .webpack('index.main.js', 'public/js/app.js')
+    .sass(['**/*.scss', 'critical.scss'], 'public/css')
+    .sass('critical.scss', 'public/css/critical.css')
+    .styles(styles, 'public/css/final.css')
+    .eslint('components/**/*.js')
+    .combine(scripts, 'public/js/final.js')
+    .version(assets)
+    .swPrecache();
 
-    // enable front-end tests by adding the below task
-    // .karma({jsDir: karmaJsDir});
+  // enable front-end tests by adding the below task
+  // .karma({jsDir: karmaJsDir});
 });
 
 
