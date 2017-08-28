@@ -2,7 +2,7 @@
 
 Angular v4 & laravel v5.x
 
-## ::Work in progress:: :hammer_and_wrench: :rocket:
+**::Work in progress::** :hammer_and_wrench: :rocket:
 
 ## Screenshot 1
 
