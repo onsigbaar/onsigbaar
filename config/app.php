@@ -10,9 +10,10 @@ return [
     | This value is the name of your application. This value is used when the
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
+    |
     */
 
-    'name' => 'Laravel',
+    'name' => env('APP_NAME', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -166,11 +167,8 @@ return [
         /*
          * Package Service Providers...
          */
-        Laravel\Tinker\TinkerServiceProvider::class,
-        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
-        Irazasyed\JwtAuthGuard\JwtAuthGuardServiceProvider::class,
-        LaravelAngular\Generators\LaravelServiceProvider::class,
-        Barryvdh\Cors\ServiceProvider::class,
+         Onsigbaar\Foundation\Providers\FoundationServiceProvider::class,
+         App\Components\Onsigbaar\Providers\OnsigbaarServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -180,11 +178,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        App\Providers\ResponseMacroServiceProvider::class,
-
-        // Component
-        Onsigbaar\Foundation\Providers\FoundationServiceProvider::class,
-        App\Components\Onsigbaar\Providers\OnsigbaarServiceProvider::class,
 
     ],
 
@@ -234,7 +227,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
 
     ],
 

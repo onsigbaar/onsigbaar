@@ -1,49 +1,21 @@
 {
-  "name"           : "onsigbaar",
-  "version"        : "0.3.2",
-  "private"        : true,
-  "scripts"        : {
-    "prod"               : "gulp --production",
-    "dev"                : "gulp watch",
-    "app:install"        : "gulp app-install && gulp rewrite-setting-seeder && php artisan vendor:publish --tag=voyager_assets --force && php artisan migrate && composer dump-autoload && php artisan db:seed && php artisan db:seed --class=VoyagerDatabaseSeeder && php artisan db:seed --class=VoyagerDummyDatabaseSeeder && php artisan storage:link && php artisan passport:install && gulp rewrite-assets && gulp",
-    "app:install-ps"     : "gulp app-install -and gulp rewrite-setting-seeder -and php artisan vendor:publish --tag=voyager_assets --force -and php artisan migrate -and composer dump-autoload -and php artisan db:seed -and php artisan db:seed --class=VoyagerDatabaseSeeder -and php artisan db:seed --class=VoyagerDummyDatabaseSeeder -and php artisan storage:link -and php artisan passport:install -and gulp rewrite-assets -and gulp",
-    "app:install-dep"    : "composer install && bower install && yarn && php artisan key:generate && php artisan jwt:secret && gulp app-install && gulp rewrite-setting-seeder && php artisan vendor:publish --tag=voyager_assets --force && php artisan migrate && composer dump-autoload && php artisan db:seed && php artisan db:seed --class=VoyagerDatabaseSeeder && php artisan db:seed --class=VoyagerDummyDatabaseSeeder && php artisan storage:link && php artisan passport:install && gulp rewrite-assets && gulp",
-    "app:install-dep-ps" : "composer install -and bower install -and yarn -and php artisan key:generate -and php artisan jwt:secret -and gulp app-install -and gulp rewrite-setting-seeder -and php artisan vendor:publish --tag=voyager_assets --force -and php artisan migrate -and composer dump-autoload -and php artisan db:seed -and php artisan db:seed --class=VoyagerDatabaseSeeder -and php artisan db:seed --class=VoyagerDummyDatabaseSeeder -and php artisan storage:link -and php artisan passport:install -and gulp rewrite-assets -and gulp",
-    "dev:setup"          : "php -r \"file_exists('.env') || copy('.env.example', '.env');\" && cd packages && mkdir onsigbaar && cd onsigbaar && git clone https://github.com/onsigbaar/components.git && git clone https://github.com/onsigbaar/foundation.git && cd components && composer update && cd ../ && cd foundation && composer update && cd ../../../ && cd app/Components && git clone https://github.com/consigliere/Signal.git && git clone https://github.com/consigliere/Signature.git && git clone https://github.com/consigliere/Onsigbaar.git && cd Signal && composer update && cd ../ && cd Signature && composer update && cd ../ && cd Onsigbaar && composer update && cd ../../../ && bower install && yarn && composer install && php artisan key:generate && php artisan jwt:secret && composer update",
-    "dev:setup-no-update": "php -r \"file_exists('.env') || copy('.env.example', '.env');\" && cd packages && mkdir onsigbaar && cd onsigbaar && git clone https://github.com/onsigbaar/components.git && git clone https://github.com/onsigbaar/foundation.git && cd ../../ && cd app/Components && git clone https://github.com/consigliere/Signal.git && git clone https://github.com/consigliere/Signature.git && git clone https://github.com/consigliere/Onsigbaar.git && cd ../../ && bower install && yarn && composer install && php artisan key:generate && php artisan jwt:secret"
-  },
-  "devDependencies": {
-    "babel-core"                     : "^6.16.0",
-    "babel-loader"                   : "^6.2.5",
-    "babel-preset-es2015"            : "^6.16.0",
-    "bootstrap-sass"                 : "^3.3.7",
-    "buble"                          : "^0.15.2",
-    "buble-loader"                   : "^0.4.0",
-    "del"                            : "^2.2.2",
-    "dotenv"                         : "^4.0.0",
-    "eslint-plugin-angular"          : "^1.3.1",
-    "gulp"                           : "^3.9.1",
-    "gulp-concat"                    : "^2.6.1",
-    "gulp-concat-sourcemap"          : "^1.3.1",
-    "gulp-cssnano"                   : "^2.1.2",
-    "gulp-filter"                    : "^4.0.0",
-    "gulp-if"                        : "^2.0.2",
-    "gulp-notify"                    : "^3.0.0",
-    "gulp-rename"                    : "^1.2.2",
-    "gulp-run-command"               : "0.0.7",
-    "gulp-template"                  : "^4.0.0",
-    "gulp-uglify"                    : "^2.0.1",
-    "gulp-util"                      : "^3.0.8",
-    "jquery"                         : "^3.1.0",
-    "laravel-elixir"                 : "^6.0.0-9",
-    "laravel-elixir-eslint"          : "^3.0.0",
-    "laravel-elixir-webpack-official": "^1.0.2",
-    "lodash"                         : "^4.14.0",
-    "main-bower-files"               : "^2.13.1",
-    "moment"                         : "^2.18.1",
-    "ng-annotate-loader"             : "^0.1.1",
-    "string"                         : "^3.3.3",
-    "sw-precache"                    : "^4.0.0",
-    "yargs"                          : "^8.0.1"
-  }
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.16.2",
+        "bootstrap-sass": "^3.3.7",
+        "cross-env": "^5.0.1",
+        "jquery": "^3.1.1",
+        "laravel-mix": "^1.0",
+        "lodash": "^4.17.4",
+        "vue": "^2.1.10"
+    }
 }
