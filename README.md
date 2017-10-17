@@ -3,6 +3,14 @@
 
 API server.
 
+## Install
+
+```bash
+
+composer create-project --prefer-dist onsigbaar/onsigbaar projectname
+
+```
+
 ---
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
