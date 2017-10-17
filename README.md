@@ -1,14 +1,11 @@
 ## onsigbaar
----
 
 API server.
 
 ## Install
 
 ```bash
-
 composer create-project --prefer-dist onsigbaar/onsigbaar projectname
-
 ```
 
 ---
