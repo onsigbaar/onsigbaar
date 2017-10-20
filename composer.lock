@@ -67,23 +67,25 @@
         },
         {
             "name": "consigliere/onsigbaar",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Onsigbaar.git",
-                "reference": "1060e6c519fa9ec2552cd881cf8b862f238aa500"
+                "reference": "b6381fc4120a1f7a92d785408dbc88ffc2353694"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Onsigbaar/zipball/1060e6c519fa9ec2552cd881cf8b862f238aa500",
-                "reference": "1060e6c519fa9ec2552cd881cf8b862f238aa500",
+                "url": "https://api.github.com/repos/consigliere/Onsigbaar/zipball/b6381fc4120a1f7a92d785408dbc88ffc2353694",
+                "reference": "b6381fc4120a1f7a92d785408dbc88ffc2353694",
                 "shasum": ""
             },
             "require": {
                 "consigliere/siegnor": "0.4.*",
                 "consigliere/signature": "0.3.*",
                 "illuminate/contracts": "5.5.*",
-                "illuminate/support": "5.5.*"
+                "illuminate/support": "5.5.*",
+                "optimus/api-consumer": "0.2.*",
+                "optimus/genie": "~2.0"
             },
             "type": "library",
             "autoload": {
@@ -98,7 +100,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-12T09:12:29+00:00"
+            "time": "2017-10-19T23:53:24+00:00"
         },
         {
             "name": "consigliere/siegnor",
@@ -1062,16 +1064,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.17",
+            "version": "v5.5.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "3a16d196bd8d2b7761c9b0060a30a3687c3ea201"
+                "reference": "1cc21baac11551377734b8c17ead17db4c34fe21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/3a16d196bd8d2b7761c9b0060a30a3687c3ea201",
-                "reference": "3a16d196bd8d2b7761c9b0060a30a3687c3ea201",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/1cc21baac11551377734b8c17ead17db4c34fe21",
+                "reference": "1cc21baac11551377734b8c17ead17db4c34fe21",
                 "shasum": ""
             },
             "require": {
@@ -1112,7 +1114,6 @@
                 "illuminate/database": "self.version",
                 "illuminate/encryption": "self.version",
                 "illuminate/events": "self.version",
-                "illuminate/exception": "self.version",
                 "illuminate/filesystem": "self.version",
                 "illuminate/hashing": "self.version",
                 "illuminate/http": "self.version",
@@ -1190,7 +1191,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-10-17T12:19:22+00:00"
+            "time": "2017-10-19T12:50:26+00:00"
         },
         {
             "name": "laravel/passport",
@@ -2037,6 +2038,153 @@
             "time": "2017-10-17T17:33:50+00:00"
         },
         {
+            "name": "optimus/api-consumer",
+            "version": "0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/esbenp/laravel-api-consumer.git",
+                "reference": "d41b6910e71037be0dd017064ae12c1570008d38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/esbenp/laravel-api-consumer/zipball/d41b6910e71037be0dd017064ae12c1570008d38",
+                "reference": "d41b6910e71037be0dd017064ae12c1570008d38",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "~4.7",
+                "satooshi/php-coveralls": "dev-master@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Optimus\\ApiConsumer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "authors": [
+                {
+                    "name": "Esben Petersen",
+                    "email": "esbenspetersen@gmail.com"
+                }
+            ],
+            "time": "2016-01-10T13:06:32+00:00"
+        },
+        {
+            "name": "optimus/architect",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/esbenp/architect.git",
+                "reference": "93b1faaeed4b41d9a5c5118925ffdd3933975b27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/esbenp/architect/zipball/93b1faaeed4b41d9a5c5118925ffdd3933975b27",
+                "reference": "93b1faaeed4b41d9a5c5118925ffdd3933975b27",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/testbench": "~3.1",
+                "phpunit/phpunit": "~4.7",
+                "satooshi/php-coveralls": "dev-master@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Optimus\\Architect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2015-10-29T19:40:54+00:00"
+        },
+        {
+            "name": "optimus/bruno",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/esbenp/bruno.git",
+                "reference": "13d075ef5b0978b15891a79033d23a952bb50f93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/esbenp/bruno/zipball/13d075ef5b0978b15891a79033d23a952bb50f93",
+                "reference": "13d075ef5b0978b15891a79033d23a952bb50f93",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.4",
+                "optimus/architect": "~1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/testbench": "~3.1",
+                "phpunit/phpunit": "~4.7",
+                "satooshi/php-coveralls": "dev-master@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Optimus\\Bruno\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2017-08-29T08:14:27+00:00"
+        },
+        {
+            "name": "optimus/genie",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/esbenp/genie.git",
+                "reference": "12cd7a4fcd32d953dd234a82252289f71961f3f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/esbenp/genie/zipball/12cd7a4fcd32d953dd234a82252289f71961f3f4",
+                "reference": "12cd7a4fcd32d953dd234a82252289f71961f3f4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": ">=4.0",
+                "optimus/bruno": "~3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "~4.7",
+                "satooshi/php-coveralls": "dev-master@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Optimus\\Genie\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2017-09-13T14:14:20+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v2.0.11",
             "source": {
@@ -2372,16 +2520,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.8.12",
+            "version": "v0.8.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "1502354ebc70d59d8e3a87c325b0eb78a79da25b"
+                "reference": "cdb5593c3684bab74e10fcfffe4a0c8d1c39695d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/1502354ebc70d59d8e3a87c325b0eb78a79da25b",
-                "reference": "1502354ebc70d59d8e3a87c325b0eb78a79da25b",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/cdb5593c3684bab74e10fcfffe4a0c8d1c39695d",
+                "reference": "cdb5593c3684bab74e10fcfffe4a0c8d1c39695d",
                 "shasum": ""
             },
             "require": {
@@ -2441,7 +2589,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2017-10-14T17:14:13+00:00"
+            "time": "2017-10-19T06:13:20+00:00"
         },
         {
             "name": "ramsey/uuid",
