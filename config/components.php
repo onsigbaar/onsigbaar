@@ -10,7 +10,9 @@ return [
     | Default component namespace.
     |
     */
-    'namespace' => 'App\Components',
+    'namespace' => 'Api',
+    // 'namespace' => 'Modules',
+    // 'namespace' => 'App\Components',
 
     /*
     |--------------------------------------------------------------------------
@@ -62,7 +64,9 @@ return [
         | automatically to list of scanned folders.
         |
         */
-        'components' => base_path('app/Components'),
+        'components' => base_path('api'),
+        // 'components' => base_path('modules'),
+        // 'components' => base_path('app/Components'),
 
         /*
         |--------------------------------------------------------------------------
@@ -170,7 +174,9 @@ return [
     'scan'  => [
         'enabled' => true,
         'paths'   => [
-            base_path('vendor/*/*'),
+            base_path('app/Components/*'),
+            base_path('modules/*'),
+            base_path('vendor/*'),
         ],
     ],
 
