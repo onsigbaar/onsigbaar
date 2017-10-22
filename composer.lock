@@ -67,25 +67,24 @@
         },
         {
             "name": "consigliere/onsigbaar",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Onsigbaar.git",
-                "reference": "b6381fc4120a1f7a92d785408dbc88ffc2353694"
+                "reference": "c63ea06fab55e31e91ac7931263c188100f3f6f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Onsigbaar/zipball/b6381fc4120a1f7a92d785408dbc88ffc2353694",
-                "reference": "b6381fc4120a1f7a92d785408dbc88ffc2353694",
+                "url": "https://api.github.com/repos/consigliere/Onsigbaar/zipball/c63ea06fab55e31e91ac7931263c188100f3f6f7",
+                "reference": "c63ea06fab55e31e91ac7931263c188100f3f6f7",
                 "shasum": ""
             },
             "require": {
+                "consigliere/passerby": "0.1.*",
                 "consigliere/siegnor": "0.4.*",
                 "consigliere/signature": "0.3.*",
                 "illuminate/contracts": "5.5.*",
-                "illuminate/support": "5.5.*",
-                "optimus/api-consumer": "0.2.*",
-                "optimus/genie": "~2.0"
+                "illuminate/support": "5.5.*"
             },
             "type": "library",
             "autoload": {
@@ -100,20 +99,55 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-19T23:53:24+00:00"
+            "time": "2017-10-22T00:44:48+00:00"
         },
         {
-            "name": "consigliere/siegnor",
-            "version": "v0.4.1",
+            "name": "consigliere/passerby",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/consigliere/Siegnor.git",
-                "reference": "a13b7d436b75a33b6312b36ba6b1cc71406edc3a"
+                "url": "https://github.com/consigliere/Passerby.git",
+                "reference": "2c94c20dc30b4a6310d7e2398b26219edfb48a59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Siegnor/zipball/a13b7d436b75a33b6312b36ba6b1cc71406edc3a",
-                "reference": "a13b7d436b75a33b6312b36ba6b1cc71406edc3a",
+                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/2c94c20dc30b4a6310d7e2398b26219edfb48a59",
+                "reference": "2c94c20dc30b4a6310d7e2398b26219edfb48a59",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.5.*",
+                "illuminate/support": "5.5.*",
+                "optimus/api-consumer": "0.2.*",
+                "optimus/genie": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "App\\Components\\Passerby\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "anonymoussc",
+                    "email": "50c5ac69@opayq.com"
+                }
+            ],
+            "time": "2017-10-22T00:54:55+00:00"
+        },
+        {
+            "name": "consigliere/siegnor",
+            "version": "v0.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/consigliere/Siegnor.git",
+                "reference": "277eb9c1257e5c97795ec6a90fcedecd0ead40ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/consigliere/Siegnor/zipball/277eb9c1257e5c97795ec6a90fcedecd0ead40ed",
+                "reference": "277eb9c1257e5c97795ec6a90fcedecd0ead40ed",
                 "shasum": ""
             },
             "require": {
@@ -133,20 +167,20 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-18T15:58:40+00:00"
+            "time": "2017-10-21T20:12:35+00:00"
         },
         {
             "name": "consigliere/signal",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Signal.git",
-                "reference": "f9f100798e94916e4559f94338bbbdc25838d256"
+                "reference": "7f37dad314990988b89d8e051196cf4ccb040708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Signal/zipball/f9f100798e94916e4559f94338bbbdc25838d256",
-                "reference": "f9f100798e94916e4559f94338bbbdc25838d256",
+                "url": "https://api.github.com/repos/consigliere/Signal/zipball/7f37dad314990988b89d8e051196cf4ccb040708",
+                "reference": "7f37dad314990988b89d8e051196cf4ccb040708",
                 "shasum": ""
             },
             "require": {
@@ -155,6 +189,13 @@
                 "jenssegers/agent": "^2.4"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "App\\Components\\Signal\\Providers\\SignalServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "App\\Components\\Signal\\": "src"
@@ -167,20 +208,20 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-12T08:05:22+00:00"
+            "time": "2017-10-22T01:01:25+00:00"
         },
         {
             "name": "consigliere/signature",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Signature.git",
-                "reference": "1e2058e308d2a0f5c3cc41b43e4765adfd117cad"
+                "reference": "76ce743f46382f0d6c703075c29f70780b9f687c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Signature/zipball/1e2058e308d2a0f5c3cc41b43e4765adfd117cad",
-                "reference": "1e2058e308d2a0f5c3cc41b43e4765adfd117cad",
+                "url": "https://api.github.com/repos/consigliere/Signature/zipball/76ce743f46382f0d6c703075c29f70780b9f687c",
+                "reference": "76ce743f46382f0d6c703075c29f70780b9f687c",
                 "shasum": ""
             },
             "require": {
@@ -201,7 +242,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-12T08:50:11+00:00"
+            "time": "2017-10-21T20:19:43+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -1929,16 +1970,16 @@
         },
         {
             "name": "onsigbaar/components",
-            "version": "v0.4.2",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/onsigbaar/components.git",
-                "reference": "406bcccd709b809c8b3229d83c616c16420269c3"
+                "reference": "f8ccadf6bad7fedace88cd3bda767eece1b04a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/onsigbaar/components/zipball/406bcccd709b809c8b3229d83c616c16420269c3",
-                "reference": "406bcccd709b809c8b3229d83c616c16420269c3",
+                "url": "https://api.github.com/repos/onsigbaar/components/zipball/f8ccadf6bad7fedace88cd3bda767eece1b04a9f",
+                "reference": "f8ccadf6bad7fedace88cd3bda767eece1b04a9f",
                 "shasum": ""
             },
             "require": {
@@ -1979,7 +2020,7 @@
                 "components",
                 "onsigbaar"
             ],
-            "time": "2017-10-17T06:31:33+00:00"
+            "time": "2017-10-22T01:09:43+00:00"
         },
         {
             "name": "onsigbaar/foundation",
@@ -4363,37 +4404,40 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102"
+                "reference": "3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/8e6e04167378abf1ddb4d3522d8755c5fd90d102",
-                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e",
+                "reference": "3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "doctrine/collections": "1.*",
-                "phpunit/phpunit": "~4.1"
+                "doctrine/collections": "^1.0",
+                "doctrine/common": "^2.6",
+                "phpunit/phpunit": "^4.1"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "DeepCopy\\": "src/DeepCopy/"
-                }
+                },
+                "files": [
+                    "src/DeepCopy/deep_copy.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Create deep copies (clones) of your objects",
-            "homepage": "https://github.com/myclabs/DeepCopy",
             "keywords": [
                 "clone",
                 "copy",
@@ -4401,7 +4445,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-04-12T18:52:22+00:00"
+            "time": "2017-10-19T19:58:43+00:00"
         },
         {
             "name": "phar-io/manifest",
