@@ -11,16 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('login');
-
-Route::get('/insert-user', function () {
-    DB::table('users')->insert([
-        'name' => 'rn',
-        'email' => 'rn@rn.com',
-        'password' => password_hash('1234', PASSWORD_BCRYPT)
-    ]);
-
-    return 'success';
-})->name('register');
+//Route::get('/', function () {
+//    return view('welcome');
+//});
