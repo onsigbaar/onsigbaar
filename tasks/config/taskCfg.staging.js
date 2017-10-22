@@ -6,8 +6,8 @@
 'use strict';
 
 let config = {
-    baseDirectory: 'vendor',
-    fromComponent: 'consigliere/siegnor'
+    baseDirectory: '',
+    fromComponent: ''
 };
 
 module.exports = config;
