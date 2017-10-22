@@ -1,0 +1,15 @@
+{
+    "name": "consigliere/user",
+    "description": "",
+    "authors": [
+        {
+            "name": "anonymoussc",
+            "email": "50c5ac69@opayq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Api\\User\\": "src"
+        }
+    }
+}
