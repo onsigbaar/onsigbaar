@@ -103,16 +103,16 @@
         },
         {
             "name": "consigliere/passerby",
-            "version": "v0.1.0",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Passerby.git",
-                "reference": "2c94c20dc30b4a6310d7e2398b26219edfb48a59"
+                "reference": "b1ca824f17dec3cfbb3c36dfa4afd929d830fce6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/2c94c20dc30b4a6310d7e2398b26219edfb48a59",
-                "reference": "2c94c20dc30b4a6310d7e2398b26219edfb48a59",
+                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/b1ca824f17dec3cfbb3c36dfa4afd929d830fce6",
+                "reference": "b1ca824f17dec3cfbb3c36dfa4afd929d830fce6",
                 "shasum": ""
             },
             "require": {
@@ -134,7 +134,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-22T00:54:55+00:00"
+            "time": "2017-10-23T01:40:06+00:00"
         },
         {
             "name": "consigliere/siegnor",
