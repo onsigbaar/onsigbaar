@@ -60,4 +60,9 @@ class AppController extends Controller
     public function destroy()
     {
     }
+
+    public function login()
+    {
+        return view('app::index');
+    }
 }
