@@ -67,22 +67,23 @@
         },
         {
             "name": "consigliere/onsigbaar",
-            "version": "v0.4.2",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Onsigbaar.git",
-                "reference": "c63ea06fab55e31e91ac7931263c188100f3f6f7"
+                "reference": "d5d51d4e26618c940a3d8fe17c917c8afe4a9f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Onsigbaar/zipball/c63ea06fab55e31e91ac7931263c188100f3f6f7",
-                "reference": "c63ea06fab55e31e91ac7931263c188100f3f6f7",
+                "url": "https://api.github.com/repos/consigliere/Onsigbaar/zipball/d5d51d4e26618c940a3d8fe17c917c8afe4a9f7a",
+                "reference": "d5d51d4e26618c940a3d8fe17c917c8afe4a9f7a",
                 "shasum": ""
             },
             "require": {
-                "consigliere/passerby": "0.1.*",
+                "consigliere/passerby": "0.2.*",
                 "consigliere/siegnor": "0.4.*",
-                "consigliere/signature": "0.3.*",
+                "consigliere/signal": "0.3.*",
+                "consigliere/signature": "0.4.*",
                 "illuminate/contracts": "5.5.*",
                 "illuminate/support": "5.5.*"
             },
@@ -99,27 +100,26 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-22T00:44:48+00:00"
+            "time": "2017-10-24T22:04:04+00:00"
         },
         {
             "name": "consigliere/passerby",
-            "version": "v0.1.1",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Passerby.git",
-                "reference": "b1ca824f17dec3cfbb3c36dfa4afd929d830fce6"
+                "reference": "ece8b1a1b1faf289bd8a52a358eb82bc5f4e2e91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/b1ca824f17dec3cfbb3c36dfa4afd929d830fce6",
-                "reference": "b1ca824f17dec3cfbb3c36dfa4afd929d830fce6",
+                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/ece8b1a1b1faf289bd8a52a358eb82bc5f4e2e91",
+                "reference": "ece8b1a1b1faf289bd8a52a358eb82bc5f4e2e91",
                 "shasum": ""
             },
             "require": {
+                "consigliere/signature": "0.4.*",
                 "illuminate/contracts": "5.5.*",
-                "illuminate/support": "5.5.*",
-                "optimus/api-consumer": "0.2.*",
-                "optimus/genie": "~2.0"
+                "illuminate/support": "5.5.*"
             },
             "type": "library",
             "autoload": {
@@ -134,7 +134,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-23T01:40:06+00:00"
+            "time": "2017-10-24T21:59:26+00:00"
         },
         {
             "name": "consigliere/siegnor",
@@ -171,16 +171,16 @@
         },
         {
             "name": "consigliere/signal",
-            "version": "v0.3.1",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Signal.git",
-                "reference": "7f37dad314990988b89d8e051196cf4ccb040708"
+                "reference": "cfa0fe8638b71e7ea93a0baabbe39a04eb766d81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Signal/zipball/7f37dad314990988b89d8e051196cf4ccb040708",
-                "reference": "7f37dad314990988b89d8e051196cf4ccb040708",
+                "url": "https://api.github.com/repos/consigliere/Signal/zipball/cfa0fe8638b71e7ea93a0baabbe39a04eb766d81",
+                "reference": "cfa0fe8638b71e7ea93a0baabbe39a04eb766d81",
                 "shasum": ""
             },
             "require": {
@@ -208,26 +208,28 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-22T01:01:25+00:00"
+            "time": "2017-10-24T21:39:29+00:00"
         },
         {
             "name": "consigliere/signature",
-            "version": "v0.3.1",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Signature.git",
-                "reference": "76ce743f46382f0d6c703075c29f70780b9f687c"
+                "reference": "635b1e7cf9dd85f2e93b95b19ce10c256e468466"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Signature/zipball/76ce743f46382f0d6c703075c29f70780b9f687c",
-                "reference": "76ce743f46382f0d6c703075c29f70780b9f687c",
+                "url": "https://api.github.com/repos/consigliere/Signature/zipball/635b1e7cf9dd85f2e93b95b19ce10c256e468466",
+                "reference": "635b1e7cf9dd85f2e93b95b19ce10c256e468466",
                 "shasum": ""
             },
             "require": {
                 "consigliere/signal": "0.3.*",
                 "illuminate/contracts": "5.5.*",
-                "illuminate/support": "5.5.*"
+                "illuminate/support": "5.5.*",
+                "optimus/api-consumer": "0.2.*",
+                "optimus/genie": "~2.0"
             },
             "type": "library",
             "autoload": {
@@ -242,7 +244,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-21T20:19:43+00:00"
+            "time": "2017-10-24T21:48:17+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -2275,16 +2277,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "34a7699e6f31b1ef4035ee36444407cecf9f56aa"
+                "reference": "f4b6a522dfa1fd1e477c9cfe5909d5b31f098c0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/34a7699e6f31b1ef4035ee36444407cecf9f56aa",
-                "reference": "34a7699e6f31b1ef4035ee36444407cecf9f56aa",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/f4b6a522dfa1fd1e477c9cfe5909d5b31f098c0b",
+                "reference": "f4b6a522dfa1fd1e477c9cfe5909d5b31f098c0b",
                 "shasum": ""
             },
             "require": {
@@ -2363,7 +2365,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2017-06-05T06:31:10+00:00"
+            "time": "2017-10-23T05:04:54+00:00"
         },
         {
             "name": "psr/container",
