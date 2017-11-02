@@ -104,22 +104,23 @@
         },
         {
             "name": "consigliere/passerby",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Passerby.git",
-                "reference": "ece8b1a1b1faf289bd8a52a358eb82bc5f4e2e91"
+                "reference": "03e06bb9439c120de9b4fc55155e28589830636d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/ece8b1a1b1faf289bd8a52a358eb82bc5f4e2e91",
-                "reference": "ece8b1a1b1faf289bd8a52a358eb82bc5f4e2e91",
+                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/03e06bb9439c120de9b4fc55155e28589830636d",
+                "reference": "03e06bb9439c120de9b4fc55155e28589830636d",
                 "shasum": ""
             },
             "require": {
                 "consigliere/signature": "0.4.*",
                 "illuminate/contracts": "5.5.*",
-                "illuminate/support": "5.5.*"
+                "illuminate/support": "5.5.*",
+                "laravel/passport": "^4.0"
             },
             "type": "library",
             "autoload": {
@@ -134,7 +135,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2017-10-24T21:59:26+00:00"
+            "time": "2017-11-02T21:47:34+00:00"
         },
         {
             "name": "consigliere/siegnor",
@@ -935,16 +936,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.53",
+            "version": "v1.2.54",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "a6ce29ecaeb411a9963ea48f4b221c70d242c27f"
+                "reference": "9af25770d9382917b680009a88497162405bbe48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/a6ce29ecaeb411a9963ea48f4b221c70d242c27f",
-                "reference": "a6ce29ecaeb411a9963ea48f4b221c70d242c27f",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/9af25770d9382917b680009a88497162405bbe48",
+                "reference": "9af25770d9382917b680009a88497162405bbe48",
                 "shasum": ""
             },
             "require": {
@@ -980,7 +981,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2017-10-17T20:08:27+00:00"
+            "time": "2017-10-28T13:05:55+00:00"
         },
         {
             "name": "jenssegers/agent",
@@ -1107,16 +1108,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.18",
+            "version": "v5.5.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "1cc21baac11551377734b8c17ead17db4c34fe21"
+                "reference": "c678100e84934ec85c9f8bc26bd0a60222682719"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/1cc21baac11551377734b8c17ead17db4c34fe21",
-                "reference": "1cc21baac11551377734b8c17ead17db4c34fe21",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c678100e84934ec85c9f8bc26bd0a60222682719",
+                "reference": "c678100e84934ec85c9f8bc26bd0a60222682719",
                 "shasum": ""
             },
             "require": {
@@ -1234,7 +1235,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-10-19T12:50:26+00:00"
+            "time": "2017-10-25T19:10:45+00:00"
         },
         {
             "name": "laravel/passport",
@@ -1824,7 +1825,7 @@
         },
         {
             "name": "mtdowling/cron-expression",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mtdowling/cron-expression.git",
@@ -1972,16 +1973,16 @@
         },
         {
             "name": "onsigbaar/components",
-            "version": "v0.4.3",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/onsigbaar/components.git",
-                "reference": "f8ccadf6bad7fedace88cd3bda767eece1b04a9f"
+                "reference": "d8b896482320b053aab676b3e5c74ae2a8344117"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/onsigbaar/components/zipball/f8ccadf6bad7fedace88cd3bda767eece1b04a9f",
-                "reference": "f8ccadf6bad7fedace88cd3bda767eece1b04a9f",
+                "url": "https://api.github.com/repos/onsigbaar/components/zipball/d8b896482320b053aab676b3e5c74ae2a8344117",
+                "reference": "d8b896482320b053aab676b3e5c74ae2a8344117",
                 "shasum": ""
             },
             "require": {
@@ -2022,27 +2023,27 @@
                 "components",
                 "onsigbaar"
             ],
-            "time": "2017-10-22T01:09:43+00:00"
+            "time": "2017-11-02T18:10:35+00:00"
         },
         {
             "name": "onsigbaar/foundation",
-            "version": "v0.4.2",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/onsigbaar/foundation.git",
-                "reference": "f17925a50c8bf757adc0b9752ce8c9958bee7470"
+                "reference": "819fc6634d6bab0b78fb6e9b88051f14efe76bfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/onsigbaar/foundation/zipball/f17925a50c8bf757adc0b9752ce8c9958bee7470",
-                "reference": "f17925a50c8bf757adc0b9752ce8c9958bee7470",
+                "url": "https://api.github.com/repos/onsigbaar/foundation/zipball/819fc6634d6bab0b78fb6e9b88051f14efe76bfa",
+                "reference": "819fc6634d6bab0b78fb6e9b88051f14efe76bfa",
                 "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.5.*",
                 "illuminate/support": "5.5.*",
                 "jeroen-g/laravel-packager": "^1.5",
-                "onsigbaar/components": "0.4.*",
+                "onsigbaar/components": "0.5.*",
                 "php": ">=7.0.0"
             },
             "require-dev": {
@@ -2078,7 +2079,7 @@
                 "foundation",
                 "onsigbaar"
             ],
-            "time": "2017-10-17T17:33:50+00:00"
+            "time": "2017-11-02T21:37:10+00:00"
         },
         {
             "name": "optimus/api-consumer",
@@ -2718,21 +2719,21 @@
         },
         {
             "name": "sensiolabs/security-checker",
-            "version": "v4.1.5",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/security-checker.git",
-                "reference": "55553c3ad6ae2121c1b1475d4c880d71b31b8f68"
+                "reference": "387b6a3b723ba35588b33d5f8d14e28ed608bd30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/55553c3ad6ae2121c1b1475d4c880d71b31b8f68",
-                "reference": "55553c3ad6ae2121c1b1475d4c880d71b31b8f68",
+                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/387b6a3b723ba35588b33d5f8d14e28ed608bd30",
+                "reference": "387b6a3b723ba35588b33d5f8d14e28ed608bd30",
                 "shasum": ""
             },
             "require": {
                 "composer/ca-bundle": "^1.0",
-                "symfony/console": "~2.7|~3.0"
+                "symfony/console": "~2.7|~3.0|~4.0"
             },
             "bin": [
                 "security-checker"
@@ -2759,7 +2760,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
-            "time": "2017-08-22T22:18:16+00:00"
+            "time": "2017-10-29T18:48:08+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
