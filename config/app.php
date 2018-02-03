@@ -167,8 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
-         Onsigbaar\Foundation\Providers\FoundationServiceProvider::class,
-         App\Components\Onsigbaar\Providers\OnsigbaarServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -178,6 +177,12 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /*
+         * Package Service Providers...
+         */
+        Onsigbaar\Foundation\Base\Providers\FoundationServiceProvider::class,
+        App\Components\Onsigbaar\Providers\OnsigbaarServiceProvider::class,
 
     ],
 
