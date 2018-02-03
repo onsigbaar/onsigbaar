@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -70,5 +71,18 @@ class UserController extends Controller
         ]);
 
         return 'success';
+    }
+
+    public function tests() {
+        return 'its works';
+    }
+
+    public function inTests() {
+        return 'b-baka';
+    }
+
+    public function authTests() {
+        return Auth::user();
+        //return Auth::id();
     }
 }
