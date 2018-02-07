@@ -23,6 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->register(\Api\App\Providers\AppServiceProvider::class);
+        $this->app->register(\Api\AppBase\Providers\AppBaseServiceProvider::class);
     }
 }
