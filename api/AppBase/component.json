@@ -1,0 +1,15 @@
+{
+    "name": "AppBase",
+    "alias": "appbase",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Api\\AppBase\\Providers\\AppBaseServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}
