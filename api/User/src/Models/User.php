@@ -7,12 +7,11 @@ use Laravel\Passport\HasApiTokens;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Spatie\Permission\Traits\HasRoles;
 
 
 class User extends AppUser
 {
-    use HasApiTokens, Notifiable, HasRoles;
+    use HasApiTokens, Notifiable;
 
     /**
      * The attributes that are mass assignable.
