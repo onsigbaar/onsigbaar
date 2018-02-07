@@ -14,8 +14,7 @@
     "laravel/passport"     : "^4.0",
     "laravel/tinker"       : "~1.0",
     "onsigbaar/foundation" : "0.5.*",
-    "consigliere/onsigbaar": "0.4.*",
-    "spatie/laravel-permission": "^2.7"
+    "consigliere/onsigbaar": "0.4.*"
   },
   "require-dev" : {
     "filp/whoops"                 : "~2.0",
