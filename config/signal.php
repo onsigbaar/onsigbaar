@@ -15,4 +15,11 @@ return [
     'notice'      => false,
     'info'        => false,
     'debug'       => false,
+
+    // Sent log data to email
+    'email' => [
+        // Set to 'true' to sent log data to email
+        'sent'   => env('SIGNAL_EMAIL_SENT', false),
+        'sentTo' => env('SIGNAL_EMAIL_SENT_TO', 'example@example.io'),
+    ],
 ];
