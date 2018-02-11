@@ -32,6 +32,11 @@ class CreateSgLogTable extends Migration
             //$table->string('phone')->nullable();
             $table->string('robot')->nullable();
             $table->string('client_ip')->nullable();
+            $table->text('error_get_message')->nullable();
+            $table->string('error_get_code')->nullable();
+            $table->string('error_get_file')->nullable();
+            $table->string('error_get_line')->nullable();
+            $table->text('error_get_trace')->nullable();
             $table->integer('user_id')->unsigned();
             /*
             $table->foreign('user_id')
