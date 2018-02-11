@@ -74,11 +74,7 @@ class UserController extends Controller
     }
 
     public function tests() {
-        return 'its works';
-    }
-
-    public function inTests() {
-        return 'b-baka';
+        return 'success';
     }
 
     public function authTests() {
