@@ -32,9 +32,4 @@ class User extends AppUser
     ];
 
     protected $guard_name = 'api';
-
-//    public function setPasswordAttribute($password)
-//    {
-//        $this->attributes['password'] = bcrypt($password);
-//    }
 }
