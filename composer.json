@@ -8,13 +8,14 @@
   "license"     : "MIT",
   "type"        : "project",
   "require"     : {
-    "php"                  : ">=7.0.0",
-    "fideloper/proxy"      : "~3.3",
-    "laravel/framework"    : "5.5.*",
-    "laravel/passport"     : "^4.0",
-    "laravel/tinker"       : "~1.0",
-    "onsigbaar/foundation" : "0.5.*",
-    "consigliere/onsigbaar": "0.4.*"
+    "php": ">=7.0.0",
+    "consigliere/onsigbaar": "0.4.*",
+    "fideloper/proxy": "~3.3",
+    "laravel/framework": "5.5.*",
+    "laravel/passport": "^4.0",
+    "laravel/tinker": "~1.0",
+    "onsigbaar/foundation": "0.5.*",
+    "wikimedia/composer-merge-plugin": "^1.4"
   },
   "require-dev" : {
     "filp/whoops"                 : "~2.0",
@@ -45,6 +46,20 @@
       "dont-discover": [
         "tcg/voyager"
       ]
+    },
+    "merge-plugin": {
+      "include": [
+          "api/*/composer.json",
+          "app/Components/*/composer.json",
+          "packages/*/*/composer.json"
+      ],
+      "recurse": true,
+      "replace": false,
+      "ignore-duplicates": false,
+      "merge-dev": true,
+      "merge-extra": false,
+      "merge-extra-deep": false,
+      "merge-scripts": true
     }
   },
   "scripts"     : {
