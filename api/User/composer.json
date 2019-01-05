@@ -1,0 +1,28 @@
+{
+    "name": "consigliere/user",
+    "description": "",
+    "authors": [
+        {
+            "name": "anonymoussc",
+            "email": "50c5ac69@opayq.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Api\\User\\Providers\\UserServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Api\\User\\": ""
+        }
+    },
+    "require"    : {
+        "consigliere/passerby"     : "0.3.*"
+    }
+}
