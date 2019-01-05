@@ -161,9 +161,10 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         /*
-         * AppBase
+         * Application Service Providers...
          */
         Onsigbaar\Foundation\Base\Providers\FoundationServiceProvider::class,
+        Api\AppBase\Providers\AppBaseServiceProvider::class,
 
     ],
 

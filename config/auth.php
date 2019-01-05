@@ -42,8 +42,8 @@ return [
         ],
 
         'api' => [
-            'driver' => 'token',
-            'provider' => 'users',
+            'driver' => 'passport',
+            'provider' => 'apis',
         ],
     ],
 
@@ -68,6 +68,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+        'apis' => [
+            'driver' => 'eloquent',
+            'model'  => Api\User\Entities\User::class,
         ],
 
         // 'users' => [
