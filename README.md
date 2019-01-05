@@ -89,7 +89,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 ```
 
-After succesfull login send get request to `<URL>/user/` to get authenticated user data.
+After successful login send get request to `<URL>/user/` to get authenticated user data.
 
 ---
 
