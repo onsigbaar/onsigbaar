@@ -64,7 +64,7 @@ Send post request into endpoint `http://localhost:8000/api/login/refresh`
 _Example using CURL_
 
 ```bash
-curl -X POST http://localhost:8000/login/refresh -b cookies.txt -c cookies.txt
+curl -X POST http://localhost:8000/api/login/refresh -b cookies.txt -c cookies.txt
 ```
 
 ## Logout user
@@ -74,7 +74,7 @@ Send post request into endpoint `http://localhost:8000/api/logout`
 _Example using CURL_
 
 ```bash
-curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X POST http://localhost:8000/logout -b cookies.txt -c cookies.txt
+curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X POST http://localhost:8000/api/logout -b cookies.txt -c cookies.txt
 ```
 
 ## Protected resources endpoint
@@ -89,7 +89,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 ```
 
-After successful login send get request to `<URL>/user/` to get authenticated user data.
+After successful login send get request to `http://localhost:8000/api/user/` to get authenticated user data.
+
+_Example using CURL_
+
+```bash
+curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X GET http://localhost:8000/api/user/
+```
 
 ---
 
