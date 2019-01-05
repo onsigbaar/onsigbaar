@@ -12,13 +12,5 @@
 */
 
 Route::prefix('user')->group(function() {
-    // Route::get('/', 'UserController@index');
-    /*
-    Route::get('/add', function (){
-        DB::table('users')->insert([
-            'name' => 'rn',
-            'email' => 'rn@test.com',
-            'password' => password_hash('1234', PASSWORD_BCRYPT)
-        ]);
-    });*/
+    Route::get('/', 'UserController@index');
 });
