@@ -1,12 +1,95 @@
 ## onsigbaar
 
-API server.
+OAuth2 API Server (Password Grant).
 
 ## Install
 
 ```bash
 composer create-project --prefer-dist onsigbaar/onsigbaar projectname
 ```
+
+## Migration and seeders
+
+```bash
+php artisan migrate
+
+php artisan db:seed
+```
+
+## Passport install
+
+```bash
+php artisan passport:install
+```
+
+## Copy personal access and password grant client value into .env
+
+```bash
+PERSONAL_CLIENT_ID=
+PERSONAL_CLIENT_SECRET=
+PASSWORD_CLIENT_ID=
+PASSWORD_CLIENT_SECRET=
+```
+
+## Run the dev server
+
+```bash
+php artisan serve
+```
+
+## Login user
+
+Send post request into endpoint `http://localhost:8000/api/login/` with user credential :
+
+```bash
+email: user@api.com
+password: user
+```
+
+_Example using CURL_
+
+```bash
+curl -X POST http://localhost:8000/api/login/ -b cookies.txt -c cookies.txt -D headers.txt -H 'Content-Type: application/json' -d '
+    {
+        "email": "user@api.com",
+        "password": "user"
+    }
+'
+```
+
+## Refresh token
+
+Send post request into endpoint `http://localhost:8000/api/login/refresh`
+
+_Example using CURL_
+
+```bash
+curl -X POST http://localhost:8000/login/refresh -b cookies.txt -c cookies.txt
+```
+
+## Logout user
+
+Send post request into endpoint `http://localhost:8000/api/logout`
+
+_Example using CURL_
+
+```bash
+curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X POST http://localhost:8000/logout -b cookies.txt -c cookies.txt
+```
+
+## Protected resources endpoint
+
+Any route implement `auth:api` middleware will become oauth2 protected
+
+```php
+# Example in api/User/Routes/api.php
+
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});
+```
+
+After succesfull login send get request to `<URL>/user/` to get authenticated user data.
 
 ---
 
