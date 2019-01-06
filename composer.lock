@@ -64,16 +64,16 @@
         },
         {
             "name": "consigliere/passerby",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Passerby.git",
-                "reference": "eba3015adcb199c59c9fd3f9fa689388682c582d"
+                "reference": "48564204f6a912afab33047e72fbe197907bf7a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/eba3015adcb199c59c9fd3f9fa689388682c582d",
-                "reference": "eba3015adcb199c59c9fd3f9fa689388682c582d",
+                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/48564204f6a912afab33047e72fbe197907bf7a5",
+                "reference": "48564204f6a912afab33047e72fbe197907bf7a5",
                 "shasum": ""
             },
             "require": {
@@ -104,20 +104,20 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2019-01-05T15:13:56+00:00"
+            "time": "2019-01-05T21:33:38+00:00"
         },
         {
             "name": "consigliere/signal",
-            "version": "v0.8.0",
+            "version": "v0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Signal.git",
-                "reference": "e0837b03b5cbe942564be0f865d2a54e3b1cd2cc"
+                "reference": "9f604d3b9a02cac8d443c83653c92b77185b845b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Signal/zipball/e0837b03b5cbe942564be0f865d2a54e3b1cd2cc",
-                "reference": "e0837b03b5cbe942564be0f865d2a54e3b1cd2cc",
+                "url": "https://api.github.com/repos/consigliere/Signal/zipball/9f604d3b9a02cac8d443c83653c92b77185b845b",
+                "reference": "9f604d3b9a02cac8d443c83653c92b77185b845b",
                 "shasum": ""
             },
             "require": {
@@ -146,20 +146,20 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2019-01-02T14:50:57+00:00"
+            "time": "2019-01-06T01:54:00+00:00"
         },
         {
             "name": "consigliere/signature",
-            "version": "v0.8.0",
+            "version": "v0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Signature.git",
-                "reference": "15cfd9951646e3fe7d3b9fab260bc24474f9bf79"
+                "reference": "73174599f4c843bb3f09df12d331f7c86891bef0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Signature/zipball/15cfd9951646e3fe7d3b9fab260bc24474f9bf79",
-                "reference": "15cfd9951646e3fe7d3b9fab260bc24474f9bf79",
+                "url": "https://api.github.com/repos/consigliere/Signature/zipball/73174599f4c843bb3f09df12d331f7c86891bef0",
+                "reference": "73174599f4c843bb3f09df12d331f7c86891bef0",
                 "shasum": ""
             },
             "require": {
@@ -189,7 +189,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2019-01-02T14:49:25+00:00"
+            "time": "2019-01-06T01:48:37+00:00"
         },
         {
             "name": "defuse/php-encryption",
