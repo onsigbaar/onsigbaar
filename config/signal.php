@@ -25,5 +25,5 @@ return [
     ],
 
     // Table name the data will be insert into
-    'table' => env('SIGNAL_TABLE', 'sg_log'),
+    'table' => env('SIGNAL_TABLE', 'signal_log'),
 ];
