@@ -1,6 +1,6 @@
 ## onsigbaar
 
-OAuth2 API Server - authenticate using Password Grant.
+OAuth2 API Server authenticate using Password Grant.
 
 ## Install
 
