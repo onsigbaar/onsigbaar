@@ -22,9 +22,10 @@ php artisan db:seed
 php artisan passport:install
 ```
 
-## Copy personal access and password grant client value into .env
+Copy personal access and password grant client value into .env
 
 ```bash
+# .env
 PERSONAL_CLIENT_ID=
 PERSONAL_CLIENT_SECRET=
 PASSWORD_CLIENT_ID=
@@ -77,9 +78,11 @@ _Example using CURL_
 curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X POST http://localhost:8000/api/logout -b cookies.txt -c cookies.txt
 ```
 
+* _Change <ACCESS_TOKEN> above with access token generated after successful login/ request access token._
+
 ## Protected resources endpoint
 
-Any route implement `auth:api` middleware will become oauth2 protected
+Implement `auth:api` middleware in any route to make the resources oauth2 protected.
 
 ```php
 # Example in api/User/Routes/api.php
