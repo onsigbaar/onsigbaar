@@ -64,20 +64,20 @@
         },
         {
             "name": "consigliere/passerby",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Passerby.git",
-                "reference": "48564204f6a912afab33047e72fbe197907bf7a5"
+                "reference": "60815ed8dfb017d0b80ad314e3e346f443dce779"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/48564204f6a912afab33047e72fbe197907bf7a5",
-                "reference": "48564204f6a912afab33047e72fbe197907bf7a5",
+                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/60815ed8dfb017d0b80ad314e3e346f443dce779",
+                "reference": "60815ed8dfb017d0b80ad314e3e346f443dce779",
                 "shasum": ""
             },
             "require": {
-                "consigliere/signal": "0.8.*",
+                "consigliere/signal": "0.9.*",
                 "consigliere/signature": "0.8.*",
                 "illuminate/contracts": "5.7.*",
                 "illuminate/support": "5.7.*",
@@ -104,20 +104,20 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2019-01-05T21:33:38+00:00"
+            "time": "2019-01-06T04:55:39+00:00"
         },
         {
             "name": "consigliere/signal",
-            "version": "v0.8.1",
+            "version": "v0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Signal.git",
-                "reference": "9f604d3b9a02cac8d443c83653c92b77185b845b"
+                "reference": "cc70a915d8ca8388a7ff9b5b85c9a3525f1c8ede"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Signal/zipball/9f604d3b9a02cac8d443c83653c92b77185b845b",
-                "reference": "9f604d3b9a02cac8d443c83653c92b77185b845b",
+                "url": "https://api.github.com/repos/consigliere/Signal/zipball/cc70a915d8ca8388a7ff9b5b85c9a3525f1c8ede",
+                "reference": "cc70a915d8ca8388a7ff9b5b85c9a3525f1c8ede",
                 "shasum": ""
             },
             "require": {
@@ -146,7 +146,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2019-01-06T01:54:00+00:00"
+            "time": "2019-01-06T04:50:31+00:00"
         },
         {
             "name": "consigliere/signature",
