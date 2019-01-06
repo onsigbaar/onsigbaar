@@ -24,6 +24,6 @@
     },
     "require"    : {
         "consigliere/signature"    : "0.8.*",
-        "consigliere/signal"       : "0.8.*"
+        "consigliere/signal"       : "0.9.*"
     }
 }
