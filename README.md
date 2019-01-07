@@ -10,9 +10,11 @@ composer create-project --prefer-dist onsigbaar/onsigbaar projectname
 
 ## Create the database
 
-## Adjust .env with your database configuration/ credential
+Adjust .env with your database configuration/ credential
 
 ```bash
+# .env
+
 DB_DATABASE=
 DB_USERNAME=
 DB_PASSWORD=
