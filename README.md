@@ -8,13 +8,19 @@ OAuth2 API Server authenticate using Password Grant.
 composer create-project --prefer-dist onsigbaar/onsigbaar projectname
 ```
 
+## Create the database
+
+## Adjust .env with your database configuration/ credential
+
+```bash
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+```
+
 ## Migration and seeders
 
 ```bash
-# Create the database
-# Adjust .env with your database configuration/ credential
-# run command in the terminal :
-
 php artisan migrate
 
 php artisan db:seed
@@ -104,13 +110,12 @@ _Example using CURL_
 curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X GET http://localhost:8000/api/user/
 ```
 
-### Link
+### Related resources
 
 - Oauth2 password grants implementation for this repo located in [here](https://github.com/consigliere/Passerby)
 - Log message into database through event subscribe using [signal](https://github.com/consigliere/Signal)
 - [Modules](https://github.com/onsigbaar/components)
 - [Framework](https://github.com/onsigbaar/framework)
-- [Oauth2 grants](https://rn.netlify.com/blog/oauth2-grants.html)
 
 ---
 
