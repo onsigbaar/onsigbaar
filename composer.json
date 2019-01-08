@@ -1,7 +1,7 @@
 {
     "name": "laravel/laravel",
     "description": "Laravel Passport OAuth2 API Server",
-    "keywords": ["framework", "laravel", "passport", "api server", "auth", "password grant", "onsigbaar"],
+    "keywords": ["framework", "laravel", "passport", "api server", "oauth2", "password grant", "onsigbaar"],
     "license": "MIT",
     "type": "project",
     "require": {
