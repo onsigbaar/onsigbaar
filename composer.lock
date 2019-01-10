@@ -64,16 +64,16 @@
         },
         {
             "name": "consigliere/passerby",
-            "version": "v0.4.2",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Passerby.git",
-                "reference": "60815ed8dfb017d0b80ad314e3e346f443dce779"
+                "reference": "61ef66408f4aee82de45f63b6ccb6c167f276177"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/60815ed8dfb017d0b80ad314e3e346f443dce779",
-                "reference": "60815ed8dfb017d0b80ad314e3e346f443dce779",
+                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/61ef66408f4aee82de45f63b6ccb6c167f276177",
+                "reference": "61ef66408f4aee82de45f63b6ccb6c167f276177",
                 "shasum": ""
             },
             "require": {
@@ -104,7 +104,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2019-01-06T04:55:39+00:00"
+            "time": "2019-01-10T17:50:30+00:00"
         },
         {
             "name": "consigliere/signal",
@@ -562,16 +562,16 @@
         },
         {
             "name": "fideloper/proxy",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fideloper/TrustedProxy.git",
-                "reference": "cf8a0ca4b85659b9557e206c90110a6a4dba980a"
+                "reference": "177c79a2d1f9970f89ee2fb4c12b429af38b6dfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/cf8a0ca4b85659b9557e206c90110a6a4dba980a",
-                "reference": "cf8a0ca4b85659b9557e206c90110a6a4dba980a",
+                "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/177c79a2d1f9970f89ee2fb4c12b429af38b6dfb",
+                "reference": "177c79a2d1f9970f89ee2fb4c12b429af38b6dfb",
                 "shasum": ""
             },
             "require": {
@@ -612,7 +612,7 @@
                 "proxy",
                 "trusted proxy"
             ],
-            "time": "2018-02-07T20:20:57+00:00"
+            "time": "2019-01-10T14:06:47+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -982,16 +982,16 @@
         },
         {
             "name": "jenssegers/agent",
-            "version": "v2.6.1",
+            "version": "v2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jenssegers/agent.git",
-                "reference": "59f35c4640b44113389509af2a647cf6dceed6ce"
+                "reference": "41cd1fd6200a9b0d70db75133ee23064c9965980"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jenssegers/agent/zipball/59f35c4640b44113389509af2a647cf6dceed6ce",
-                "reference": "59f35c4640b44113389509af2a647cf6dceed6ce",
+                "url": "https://api.github.com/repos/jenssegers/agent/zipball/41cd1fd6200a9b0d70db75133ee23064c9965980",
+                "reference": "41cd1fd6200a9b0d70db75133ee23064c9965980",
                 "shasum": ""
             },
             "require": {
@@ -1047,7 +1047,7 @@
                 "user agent",
                 "useragent"
             ],
-            "time": "2019-01-04T13:02:53+00:00"
+            "time": "2019-01-06T12:37:04+00:00"
         },
         {
             "name": "jeroen-g/laravel-packager",
@@ -1107,16 +1107,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.19",
+            "version": "v5.7.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "5c1d1ec7e8563ea31826fd5eb3f6791acf01160c"
+                "reference": "10cd20294b5668f90ba91996236834e71f7ff670"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/5c1d1ec7e8563ea31826fd5eb3f6791acf01160c",
-                "reference": "5c1d1ec7e8563ea31826fd5eb3f6791acf01160c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/10cd20294b5668f90ba91996236834e71f7ff670",
+                "reference": "10cd20294b5668f90ba91996236834e71f7ff670",
                 "shasum": ""
             },
             "require": {
@@ -1190,7 +1190,7 @@
                 "moontoast/math": "^1.1",
                 "orchestra/testbench-core": "3.7.*",
                 "pda/pheanstalk": "^3.0",
-                "phpunit/phpunit": "^7.0",
+                "phpunit/phpunit": "^7.5",
                 "predis/predis": "^1.1.1",
                 "symfony/css-selector": "^4.1",
                 "symfony/dom-crawler": "^4.1",
@@ -1249,7 +1249,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-12-18T14:00:38+00:00"
+            "time": "2019-01-08T14:39:11+00:00"
         },
         {
             "name": "laravel/nexmo-notification-channel",
