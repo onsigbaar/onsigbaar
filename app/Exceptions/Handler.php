@@ -4,9 +4,12 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use App\Components\Signal\Shared\Signal;
 
 class Handler extends ExceptionHandler
 {
+    use Signal;
+
     /**
      * A list of the exception types that are not reported.
      *
@@ -35,6 +38,9 @@ class Handler extends ExceptionHandler
     public function report(Exception $exception)
     {
         parent::report($exception);
+
+        # Log all error exception into database.
+        # $this->fireLog('error', $exception->getMessage(), ['error' => $exception]);
     }
 
     /**
