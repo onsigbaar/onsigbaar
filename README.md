@@ -169,7 +169,7 @@ public function report(Exception $exception)
 ```
 
 Global application error exception will be saved into database and sent to user email.
-The data saved and emailed will include the user ID, request url, request method, client ip, browser, brower version, user OS etc.
+The data saved and emailed will include the user ID, request url, request method, client ip, browser, browser version, user OS etc.
 
 ### Related resources
 
