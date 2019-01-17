@@ -112,6 +112,65 @@ _Example using CURL_
 curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X GET http://localhost:8000/api/user/
 ```
 
+## Send all error/ exception to user email
+
+Make sure the application can send email by providing the correct data in .env
+
+```
+MAIL_DRIVER=
+MAIL_HOST=
+MAIL_PORT=
+MAIL_USERNAME=
+MAIL_PASSWORD=
+MAIL_ENCRYPTION=
+```
+
+Set the `LOG_ACTIVITY` and `SIGNAL_EMAIL_SENT` value to `true` in `.env`.
+Provide user email data where it will be sent etc.
+
+```
+LOG_ACTIVITY=true
+SIGNAL_EMAIL_SENT=true
+SIGNAL_EMAIL_SENT_TO=
+SIGNAL_USE_TABLE=signal_log
+
+MAIL_FROM_ADDRESS=
+MAIL_FROM_NAME=
+```
+
+In `app/Exceptions/Handler.php` uncomment the line code bellow, from previously :
+
+```php
+# app/Exceptions/Handler.php
+...
+public function report(Exception $exception)
+{
+    parent::report($exception);
+
+    # Log all error exception into database.
+    # $this->fireLog('error', $exception->getMessage(), ['error' => $exception]);
+}
+...
+```
+
+Changed into :
+
+```php
+# app/Exceptions/Handler.php
+...
+public function report(Exception $exception)
+{
+    parent::report($exception);
+
+    # Log all error exception into database.
+    $this->fireLog('error', $exception->getMessage(), ['error' => $exception]);
+}
+...
+```
+
+Global application error exception will be saved into database and sent to user email.
+The data saved and emailed will include the user ID, request url, request method, client ip, browser, brower version, user OS etc.
+
 ### Related resources
 
 - Oauth2 password grants implementation for this repo located in [here](https://github.com/consigliere/Passerby)
