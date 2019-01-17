@@ -114,7 +114,7 @@ curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X GET http://localhost:8000/api/
 
 ## Send all error/ exception to user email
 
-Make sure the application can send email by providing the correct data in .env
+Make sure the application can send email by providing the correct data in `.env`
 
 ```
 MAIL_DRIVER=
