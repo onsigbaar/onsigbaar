@@ -1,6 +1,6 @@
 ## onsigbaar
 
-OAuth2 API Server authenticate using Password Grant.
+OAuth2 API Server authentication using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3).
 
 ## Install
 
@@ -177,6 +177,8 @@ The data saved and emailed will include the user ID, request url, request method
 - Log message into database through event subscribe using [signal](https://github.com/consigliere/Signal)
 - [Modules](https://github.com/onsigbaar/components)
 - [Framework](https://github.com/onsigbaar/framework)
+- [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3)
+- [Which grants](https://rn.netlify.com/blog/oauth2-grants.html)
 
 ---
 
