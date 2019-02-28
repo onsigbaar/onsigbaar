@@ -1,12 +1,19 @@
 <?php
+/**
+ * Copyright(c) 2019. All rights reserved.
+ * Last modified 2/28/19 6:16 AM
+ */
 
 namespace Api\User\Entities;
 
-use Laravel\Passport\HasApiTokens;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Passport\HasApiTokens;
 
+/**
+ * Class User
+ * @package Api\User\Entities
+ */
 class User extends Authenticatable
 {
     use HasApiTokens, Notifiable;
@@ -17,7 +24,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'uuid', 'username', 'name', 'email', 'password',
     ];
 
     /**
@@ -28,4 +35,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * @param $identifier
+     *
+     * @return mixed
+     */
+    public function findForPassport($identifier)
+    {
+        return $this->orWhere('username', $identifier)->orWhere('email', $identifier)->first();
+    }
 }

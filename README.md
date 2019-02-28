@@ -55,7 +55,12 @@ php artisan serve
 Send post request into endpoint `http://localhost:8000/api/login/` with user credential :
 
 ```bash
-email: user@api.com
+# username object can use username or email as it's value
+username: user
+password: user
+
+# or
+username: user@api.com
 password: user
 ```
 
@@ -64,7 +69,7 @@ _Example using CURL_
 ```bash
 curl -X POST http://localhost:8000/api/login/ -b cookies.txt -c cookies.txt -D headers.txt -H 'Content-Type: application/json' -d '
     {
-        "email": "user@api.com",
+        "username": "user@api.com",
         "password": "user"
     }
 '
