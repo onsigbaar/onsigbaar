@@ -5,12 +5,13 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": "^7.1.3",
-        "fideloper/proxy": "^4.0",
-        "laravel/framework": "5.7.*",
-        "laravel/passport": "^7.0",
-        "laravel/tinker": "^1.0",
-        "onsigbaar/foundation": "0.7.*",
+        "php"                            : "^7.1.3",
+        "fideloper/proxy"                : "^4.0",
+        "laravel/framework"              : "5.7.*",
+        "laravel/passport"               : "^7.0",
+        "laravel/tinker"                 : "^1.0",
+        "onsigbaar/foundation"           : "0.7.*",
+        "webpatser/laravel-uuid"         : "^3.0",
         "wikimedia/composer-merge-plugin": "^1.4"
     },
     "require-dev": {
