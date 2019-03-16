@@ -1,6 +1,6 @@
 {
   "name"             : "laravel/laravel",
-  "description"      : "Laravel Passport OAuth2 API Server",
+  "description"      : "Laravel Passport OAuth2 API Server authentication using Resouce Owner Password Credential Grant with optional Laravel admin dashboard",
   "keywords"         : ["framework", "laravel", "passport", "api server", "oauth2", "password grant", "onsigbaar"],
   "license"          : "MIT",
   "type"             : "project",
@@ -16,14 +16,14 @@
   },
   "require-dev"      : {
     "beyondcode/laravel-dump-server": "^1.0",
-    "filp/whoops": "^2.0",
-    "fzaninotto/faker": "^1.4",
-    "mockery/mockery": "^1.0",
-    "nunomaduro/collision": "^2.0",
-    "orangehill/iseed": "^2.6",
-    "phpunit/phpunit": "^7.0",
-    "roave/security-advisories": "dev-master",
-    "xethron/migrations-generator": "^2.0"
+    "filp/whoops"                   : "^2.0",
+    "fzaninotto/faker"              : "^1.4",
+    "mockery/mockery"               : "^1.0",
+    "nunomaduro/collision"          : "^2.0",
+    "orangehill/iseed"              : "^2.6",
+    "phpunit/phpunit"               : "^7.0",
+    "roave/security-advisories"     : "dev-master",
+    "xethron/migrations-generator"  : "^2.0"
   },
   "autoload"         : {
     "classmap": [
@@ -69,7 +69,23 @@
     "post-autoload-dump"       : [
       "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
       "@php artisan package:discover"
-    ]
+    ],
+    "passport-install"         : [
+      "@sc-migrate",
+      "@sc-db-seed",
+      "@sc-passport"
+    ],
+    "app-scaffold"             : [
+      "@sc-require",
+      "@sc-install",
+      "@sc-set-admin"
+    ],
+    "sc-require"               : "@composer require consigliere/scaffold",
+    "sc-install"               : "@php artisan voyager:install --with-dummy",
+    "sc-set-admin"             : "@php artisan voyager:admin user@api.com",
+    "sc-migrate"               : "@php artisan migrate",
+    "sc-db-seed"               : "@php artisan db:seed",
+    "sc-passport"              : "@php artisan passport:install"
   },
   "config"           : {
     "preferred-install"  : "dist",
