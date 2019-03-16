@@ -1,29 +1,28 @@
 {
-    "name": "consigliere/appbase",
-    "description": "",
-    "authors": [
-        {
-            "name": "anonymoussc",
-            "email": "50c5ac69@opayq.com"
-        }
-    ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Api\\AppBase\\Providers\\AppBaseServiceProvider"
-            ],
-            "aliases": {
-                
-            }
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Api\\AppBase\\": ""
-        }
-    },
-    "require"    : {
-        "consigliere/signature"    : "0.8.*",
-        "consigliere/signal"       : "0.9.*"
+  "name"       : "consigliere/appbase",
+  "description": "",
+  "authors"    : [
+    {
+      "name" : "anonymoussc",
+      "email": "50c5ac69@opayq.com"
     }
+  ],
+  "extra"      : {
+    "laravel": {
+      "providers": [
+        "Api\\AppBase\\Providers\\AppBaseServiceProvider"
+      ],
+      "aliases"  : {
+      }
+    }
+  },
+  "autoload"   : {
+    "psr-4": {
+      "Api\\AppBase\\": ""
+    }
+  },
+  "require"    : {
+    "consigliere/signature": "0.8.*",
+    "consigliere/signal"   : "0.9.*"
+  }
 }
