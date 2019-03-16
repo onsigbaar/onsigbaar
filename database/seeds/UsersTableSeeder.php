@@ -30,9 +30,9 @@ class UsersTableSeeder extends Seeder
                 'email'             => 'user@api.com',
                 'email_verified_at' => NULL,
                 'password'          => password_hash('user', PASSWORD_BCRYPT),
-                'remember_token'    => null,
-                'created_at'        => null,
-                'updated_at'        => null,
+                'remember_token'    => NULL,
+                'created_at'        => NULL,
+                'updated_at'        => NULL,
             ),
         ));
         
