@@ -1,4 +1,4 @@
-## onsigbaar
+## onsigbaar/onsigbaar
 
 Laravel Passport OAuth2 API Server authentication using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
 with optional laravel admin dashboard that includes user-permission-role, GUI for CRUD operations, a media manager, menu builder, and much more.
@@ -21,18 +21,10 @@ DB_USERNAME=
 DB_PASSWORD=
 ```
 
-## Migration and seeders
-
-```bash
-php artisan migrate
-
-php artisan db:seed
-```
-
 ## Passport install
 
 ```bash
-php artisan passport:install
+composer passport-install
 ```
 
 Copy personal access and password grant client value into .env
@@ -51,17 +43,13 @@ PASSWORD_CLIENT_SECRET=
 php artisan serve
 ```
 
-## Login user
+## Authenticate user
 
 Send post request into endpoint `http://localhost:8000/api/login/` with user credential :
 
 ```bash
-# username object can use username or email as it's value
-username: user
-password: user
-
-# or
-username: user@api.com
+# username key can use username or email as it's value
+username: user # user@api.com
 password: user
 ```
 
@@ -76,7 +64,12 @@ curl -X POST http://localhost:8000/api/login/ -b cookies.txt -c cookies.txt -D h
 '
 ```
 
-## Refresh token
+## Refresh token with http-only cookies
+
+Enable when `httpOnly` value in `config/password` are set to __true__. Default value.
+
+In this mode, the refresh token will be set in a cookie with http-only flag, 
+making it inaccessible by scripting languages (ie. javascript), the cookie can be accessed by the server.
 
 Send post request into endpoint `http://localhost:8000/api/login/refresh`
 
@@ -84,6 +77,39 @@ _Example using CURL_
 
 ```bash
 curl -X POST http://localhost:8000/api/login/refresh -b cookies.txt -c cookies.txt
+```
+
+_Example: Http Response return from server_
+
+```bash
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY3ZGM4...",
+    "expires_in": 600
+}
+```
+
+## Refresh token with http request query-string
+
+Enable when `httpOnly` value in `config/password` are set to __false__.
+
+Send post request into endpoint `http://localhost:8000/api/login/refresh?refreshToken=<REFRESH_TOKEN>`
+
+* _Change <REFRESH_TOKEN> above with __refresh token__ value generated after successful authentication._
+
+_Example using CURL_
+
+```bash
+curl -X POST http://localhost:8000/api/login/refresh?refreshToken=<REFRESH_TOKEN>
+```
+
+_Example: Http Response return from server_
+
+```bash
+{
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY3ZGM4...",
+    "refresh_token": "def502009f7d6d7498d34fe933b76aec8d83958bc2165c17c627c6...",
+    "expires_in": 599
+}
 ```
 
 ## Logout user
@@ -96,7 +122,7 @@ _Example using CURL_
 curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X POST http://localhost:8000/api/logout -b cookies.txt -c cookies.txt
 ```
 
-* _Change <ACCESS_TOKEN> above with access token generated after successful login/ request access token._
+* _Change <ACCESS_TOKEN> above with __access token__ value generated after successful authentication._
 
 ## Protected resources endpoint
 
@@ -117,6 +143,8 @@ _Example using CURL_
 ```bash
 curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X GET http://localhost:8000/api/user/
 ```
+
+* _Change <ACCESS_TOKEN> above with __access token__ value generated after successful authentication._
 
 ## Send all error/ exception to user email
 
