@@ -71,14 +71,10 @@
       "@php artisan package:discover"
     ],
     "passport-install"         : [
-      "@sc-migrate",
-      "@sc-db-seed",
-      "@sc-passport"
+      "@sc-migrate", "@sc-db-seed", "@sc-passport"
     ],
     "app-scaffold"             : [
-      "@sc-require",
-      "@sc-install",
-      "@sc-set-admin"
+      "@sc-require", "@sc-install", "@sc-set-admin"
     ],
     "sc-require"               : "@composer require consigliere/scaffold",
     "sc-install"               : "@php artisan voyager:install --with-dummy",
