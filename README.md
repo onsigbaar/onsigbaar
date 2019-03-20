@@ -108,7 +108,7 @@ _Example: Http Response return from server_
 {
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY3ZGM4...",
     "refresh_token": "def502009f7d6d7498d34fe933b76aec8d83958bc2165c17c627c6...",
-    "expires_in": 599
+    "expires_in": 600
 }
 ```
 
