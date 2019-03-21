@@ -1,4 +1,4 @@
-## onsigbaar/onsigbaar
+## onsigbaar
 
 Laravel Passport OAuth2 API Server authentication using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
 with optional laravel admin dashboard that includes user-permission-role, GUI for CRUD operations, a media manager, menu builder, and much more.
@@ -88,19 +88,29 @@ _Example: Http Response return from server_
 }
 ```
 
-## Refresh token with http request query-string
+## Refresh token without http-only cookies
 
 Enable when `httpOnly` value in `config/password` are set to __false__.
 
-Send post request into endpoint `http://localhost:8000/api/login/refresh?refreshToken=<REFRESH_TOKEN>`
+Send post request into endpoint `http://localhost:8000/api/login/refresh`
 
-* _Change <REFRESH_TOKEN> above with __refresh token__ value generated after successful authentication._
+_Example 1: using CURL include `refreshToken` in http request body payload_
 
-_Example using CURL_
+```bash
+curl -X POST http://localhost:8000/api/login/refresh -H 'Content-Type: application/json' -d '
+    {
+        "refreshToken": <REFRESH_TOKEN>,
+    }
+'
+```
+
+_Example 2: using CURL in http request param query-string_
 
 ```bash
 curl -X POST http://localhost:8000/api/login/refresh?refreshToken=<REFRESH_TOKEN>
 ```
+
+* _Change <REFRESH_TOKEN> above with __refresh token__ value generated after successful authentication._
 
 _Example: Http Response return from server_
 
