@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'namespace' => 'App\Components',
+    'namespace' => 'Api',
 
     /*
     |--------------------------------------------------------------------------
@@ -24,7 +24,7 @@ return [
 
     'stubs' => [
         'enabled' => false,
-        'path' => base_path() . '/vendor/onsigbaar/components/src/Commands/stubs',
+        'path' => base_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
         'files' => [
             'routes/web' => 'Routes/web.php',
             'routes/api' => 'Routes/api.php',
@@ -54,7 +54,7 @@ return [
                 'MODULE_NAMESPACE',
             ],
         ],
-        'gitkeep' => true,
+        'gitkeep' => false,
     ],
     'paths' => [
         /*
@@ -67,7 +67,7 @@ return [
         |
         */
 
-        'modules' => base_path('app/Components'),
+        'modules' => base_path('api'),
         /*
         |--------------------------------------------------------------------------
         | Modules assets path
@@ -83,7 +83,7 @@ return [
         | The migrations path
         |--------------------------------------------------------------------------
         |
-        | Where you run 'component:publish-migration' command, where do you publish the
+        | Where you run 'module:publish-migration' command, where do you publish the
         | the migration files?
         |
         */
@@ -137,7 +137,7 @@ return [
         'paths' => [
             base_path('api/*'),
             base_path('app/Components/*'),
-            base_path('Modules/*'),
+            base_path('modules/*'),
             base_path('vendor/*'),
         ],
     ],
@@ -153,7 +153,7 @@ return [
     'composer' => [
         'vendor' => 'consigliere',
         'author' => [
-            'name'  => 'anonymoussc',
+            'name' => 'anonymoussc',
             'email' => '50c5ac69@opayq.com',
         ],
     ],
@@ -167,7 +167,7 @@ return [
     */
     'cache' => [
         'enabled' => false,
-        'key' => 'components',
+        'key' => 'laravel-cache',
         'lifetime' => 60,
     ],
     /*

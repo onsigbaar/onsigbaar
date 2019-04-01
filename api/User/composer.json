@@ -22,6 +22,6 @@
     }
   },
   "require"    : {
-    "consigliere/passerby": "0.6.*"
+    "consigliere/passerby": "0.7.*"
   }
 }
