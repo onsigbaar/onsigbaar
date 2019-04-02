@@ -41,9 +41,9 @@ Install done.
 
 ---
 
-# API
+# Api
 
-## Run the dev server
+Run the dev server:
 
 ```bash
 php artisan serve
