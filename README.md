@@ -1,4 +1,4 @@
-## onsigbaar
+# onsigbaar
 
 Laravel Passport OAuth2 API Server authentication using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
 with optional laravel admin dashboard that includes user-permission-role, GUI for CRUD operations, a media manager, menu builder, and much more.
@@ -13,7 +13,7 @@ composer create-project --prefer-dist onsigbaar/onsigbaar projectname
 
 Adjust .env with your database configuration/ credential
 
-```bash
+```properties
 # .env
 
 DB_DATABASE=
@@ -29,13 +29,19 @@ composer passport-install
 
 Copy personal access and password grant client value into .env
 
-```bash
+```properties
 # .env
 PERSONAL_CLIENT_ID=
 PERSONAL_CLIENT_SECRET=
 PASSWORD_CLIENT_ID=
 PASSWORD_CLIENT_SECRET=
 ```
+
+Install done.
+
+---
+
+# API
 
 ## Run the dev server
 
@@ -81,7 +87,7 @@ curl -X POST http://localhost:8000/api/login/refresh -b cookies.txt -c cookies.t
 
 _Example: Http Response return from server_
 
-```bash
+```json
 {
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY3ZGM4...",
     "expires_in": 600
@@ -114,7 +120,7 @@ curl -X POST http://localhost:8000/api/login/refresh?refreshToken=<REFRESH_TOKEN
 
 _Example: Http Response return from server_
 
-```bash
+```json
 {
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY3ZGM4...",
     "refresh_token": "def502009f7d6d7498d34fe933b76aec8d83958bc2165c17c627c6...",
@@ -160,7 +166,7 @@ curl -H "Authorization: Bearer <ACCESS_TOKEN>" -X GET http://localhost:8000/api/
 
 Make sure the application can send email by providing the correct data in `.env`
 
-```
+```properties
 MAIL_DRIVER=
 MAIL_HOST=
 MAIL_PORT=
@@ -172,7 +178,7 @@ MAIL_ENCRYPTION=
 Set the `LOG_ACTIVITY` and `SIGNAL_EMAIL_SENT` value to `true` in `.env`.
 Provide user email data where it will be sent etc.
 
-```
+```properties
 LOG_ACTIVITY=true
 SIGNAL_EMAIL_SENT=true
 SIGNAL_EMAIL_SENT_TO=
