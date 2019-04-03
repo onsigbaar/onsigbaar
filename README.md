@@ -1,4 +1,4 @@
-# onsigbaar
+## onsigbaar
 
 Laravel Passport OAuth2 API Server authentication using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
 with optional laravel admin dashboard that includes user-permission-role, GUI for CRUD operations, a media manager, menu builder, and much more.
@@ -41,13 +41,9 @@ Install done.
 
 ---
 
-# Api
+## Api
 
-Run the dev server:
-
-```bash
-php artisan serve
-```
+In the _terminal_/ _cmd_/ _bash_ run the dev server using `php artisan serve'.
 
 ## Authenticate user
 
