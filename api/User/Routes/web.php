@@ -13,7 +13,4 @@
 
 Route::prefix('user')->group(function() {
     // Route::get('/', 'UserController@index');
-    Route::get('/', function() {
-        return "";
-    })->name('login');
 });
