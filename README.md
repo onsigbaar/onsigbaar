@@ -43,7 +43,7 @@ Install done.
 
 ## Api
 
-In the _terminal_/ _cmd_/ _bash_ run the dev server using `php artisan serve'.
+In the _terminal_/ _cmd_/ _bash_ run the dev server using `php artisan serve`.
 
 ## Authenticate user
 
