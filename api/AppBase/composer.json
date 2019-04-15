@@ -23,6 +23,6 @@
   },
   "require"    : {
     "consigliere/signature": "0.9.*",
-    "consigliere/signal"   : "0.10.*"
+    "consigliere/signal"   : "^0.10"
   }
 }
