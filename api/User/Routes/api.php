@@ -1,4 +1,8 @@
 <?php
+/**
+ * Copyright(c) 2019. All rights reserved.
+ * Last modified 5/16/19 12:56 PM
+ */
 
 use Illuminate\Http\Request;
 
@@ -13,6 +17,26 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:api')->get('/user', function(Request $request) {
+    $user = $request->user();
+
+    return [
+        'data' => [
+            'type'       => 'users',
+            'id'         => $user->uuid,
+            'attributes' => [
+                'username' => $user->username,
+                'name'     => $user->name,
+                'email'    => $user->email,
+            ],
+        ],
+        'link' => $request->fullUrl(),
+        'meta' => [
+            'copyright' => 'copyrightⒸ ' . date('Y') . ' ' . \Illuminate\Support\Facades\Config::get('app.name'),
+            'author'    => [
+                'person1',
+                'person2',
+            ],
+        ],
+    ];
 });
