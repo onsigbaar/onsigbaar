@@ -8,21 +8,21 @@
     "packages": [
         {
             "name": "consigliere/passerby",
-            "version": "v0.7.2",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Passerby.git",
-                "reference": "601f3dcf6e09fadd497461a0871e804c1ba22e7a"
+                "reference": "49e26966fbab70340bb2d5022fbed27e16b3be68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/601f3dcf6e09fadd497461a0871e804c1ba22e7a",
-                "reference": "601f3dcf6e09fadd497461a0871e804c1ba22e7a",
+                "url": "https://api.github.com/repos/consigliere/Passerby/zipball/49e26966fbab70340bb2d5022fbed27e16b3be68",
+                "reference": "49e26966fbab70340bb2d5022fbed27e16b3be68",
                 "shasum": ""
             },
             "require": {
-                "consigliere/signal": "^0.10",
-                "consigliere/signature": "0.9.*",
+                "consigliere/signal": "^1.0",
+                "consigliere/signature": "0.10.*",
                 "illuminate/contracts": "5.8.*",
                 "illuminate/support": "5.8.*",
                 "laravel/passport": "^7.0"
@@ -48,26 +48,27 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2019-04-22T07:26:28+00:00"
+            "time": "2019-05-22T03:07:59+00:00"
         },
         {
             "name": "consigliere/signal",
-            "version": "v0.10.1",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Signal.git",
-                "reference": "f5a3d997ef013a3dcadd383d9b431c09726cfbc1"
+                "reference": "f4c0a078e0077e2d28e053c27f322dc768a2b5db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Signal/zipball/f5a3d997ef013a3dcadd383d9b431c09726cfbc1",
-                "reference": "f5a3d997ef013a3dcadd383d9b431c09726cfbc1",
+                "url": "https://api.github.com/repos/consigliere/Signal/zipball/f4c0a078e0077e2d28e053c27f322dc768a2b5db",
+                "reference": "f4c0a078e0077e2d28e053c27f322dc768a2b5db",
                 "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
                 "illuminate/support": "5.8.*",
-                "jenssegers/agent": "^2.4"
+                "jenssegers/agent": "^2.4",
+                "webpatser/laravel-uuid": "^3.0"
             },
             "type": "library",
             "extra": {
@@ -90,27 +91,28 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2019-04-15T01:44:02+00:00"
+            "time": "2019-05-21T02:24:50+00:00"
         },
         {
             "name": "consigliere/signature",
-            "version": "v0.9.1",
+            "version": "v0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consigliere/Signature.git",
-                "reference": "21a824ce3c77c4f55f3e2acb807be14d7c914f5e"
+                "reference": "d22268288eacead337558fde4858264b3b0906b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consigliere/Signature/zipball/21a824ce3c77c4f55f3e2acb807be14d7c914f5e",
-                "reference": "21a824ce3c77c4f55f3e2acb807be14d7c914f5e",
+                "url": "https://api.github.com/repos/consigliere/Signature/zipball/d22268288eacead337558fde4858264b3b0906b1",
+                "reference": "d22268288eacead337558fde4858264b3b0906b1",
                 "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
                 "illuminate/support": "5.8.*",
                 "optimus/api-consumer": "0.2.*",
-                "optimus/genie": "~2.0"
+                "optimus/genie": "~2.0",
+                "webpatser/laravel-uuid": "^3.0"
             },
             "type": "library",
             "extra": {
@@ -124,7 +126,10 @@
             "autoload": {
                 "psr-4": {
                     "App\\Components\\Signature\\": ""
-                }
+                },
+                "files": [
+                    "Helpers/Helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
@@ -133,7 +138,7 @@
                     "email": "50c5ac69@opayq.com"
                 }
             ],
-            "time": "2019-04-25T10:05:04+00:00"
+            "time": "2019-05-21T07:57:27+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -1000,16 +1005,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.8.17",
+            "version": "v5.8.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "33c04dd2a431adeeb49926a4f2b20590cc033ca2"
+                "reference": "9f571be04435883dab6f23ecfadb204273b7f527"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/33c04dd2a431adeeb49926a4f2b20590cc033ca2",
-                "reference": "33c04dd2a431adeeb49926a4f2b20590cc033ca2",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9f571be04435883dab6f23ecfadb204273b7f527",
+                "reference": "9f571be04435883dab6f23ecfadb204273b7f527",
                 "shasum": ""
             },
             "require": {
@@ -1143,7 +1148,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-05-14T16:02:41+00:00"
+            "time": "2019-05-21T16:40:34+00:00"
         },
         {
             "name": "laravel/passport",
@@ -1388,16 +1393,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.51",
+            "version": "1.0.52",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "755ba7bf3fb9031e6581d091db84d78275874396"
+                "reference": "c5a5097156387970e6f0ccfcdf03f752856f3391"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/755ba7bf3fb9031e6581d091db84d78275874396",
-                "reference": "755ba7bf3fb9031e6581d091db84d78275874396",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c5a5097156387970e6f0ccfcdf03f752856f3391",
+                "reference": "c5a5097156387970e6f0ccfcdf03f752856f3391",
                 "shasum": ""
             },
             "require": {
@@ -1468,7 +1473,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-03-30T13:22:34+00:00"
+            "time": "2019-05-20T20:21:14+00:00"
         },
         {
             "name": "league/oauth2-server",
@@ -1679,16 +1684,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.17.1",
+            "version": "2.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "96acbc0c03782e8115156dd4dd8b736267155066"
+                "reference": "8322b7bd1805be31867c13bf3cdaab948a0dd406"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/96acbc0c03782e8115156dd4dd8b736267155066",
-                "reference": "96acbc0c03782e8115156dd4dd8b736267155066",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8322b7bd1805be31867c13bf3cdaab948a0dd406",
+                "reference": "8322b7bd1805be31867c13bf3cdaab948a0dd406",
                 "shasum": ""
             },
             "require": {
@@ -1735,7 +1740,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-04-27T18:04:27+00:00"
+            "time": "2019-05-16T18:44:35+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -5697,7 +5702,7 @@
                 "cart2quote/module-quotation": ">=4.1.6,<=4.4.5|>=5,<5.4.4",
                 "cartalyst/sentry": "<=2.1.6",
                 "codeigniter/framework": "<=3.0.6",
-                "composer/composer": "<=1.0.0-alpha11",
+                "composer/composer": "<=1-alpha.11",
                 "contao-components/mediaelement": ">=2.14.2,<2.21.1",
                 "contao/core": ">=2,<3.5.39",
                 "contao/core-bundle": ">=4,<4.4.39|>=4.5,<4.7.5",
@@ -5729,7 +5734,7 @@
                 "fuel/core": "<1.8.1",
                 "gree/jose": "<=2.2",
                 "gregwar/rst": "<1.0.3",
-                "guzzlehttp/guzzle": ">=6,<6.2.1|>=4.0.0-rc2,<4.2.4|>=5,<5.3.1",
+                "guzzlehttp/guzzle": ">=4-rc.2,<4.2.4|>=5,<5.3.1|>=6,<6.2.1",
                 "illuminate/auth": ">=4,<4.0.99|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.10",
                 "illuminate/cookie": ">=4,<=4.0.11|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.42|>=5.6,<5.6.30",
                 "illuminate/database": ">=4,<4.0.99|>=4.1,<4.1.29",
@@ -5764,7 +5769,7 @@
                 "phpunit/phpunit": ">=4.8.19,<4.8.28|>=5.0.10,<5.6.3",
                 "phpwhois/phpwhois": "<=4.2.5",
                 "phpxmlrpc/extras": "<0.6.1",
-                "propel/propel": ">=2.0.0-alpha1,<=2.0.0-alpha7",
+                "propel/propel": ">=2-alpha.1,<=2-alpha.7",
                 "propel/propel1": ">=1,<=1.7.1",
                 "pusher/pusher-php-server": "<2.2.1",
                 "robrichards/xmlseclibs": ">=1,<3.0.2",
@@ -5815,7 +5820,7 @@
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "tecnickcom/tcpdf": "<6.2.22",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
+                "thelia/thelia": ">=2.1-beta.1,<2.1.3",
                 "theonedemon/phpwhois": "<=4.2.5",
                 "titon/framework": ">=0,<9.9.99",
                 "truckersmp/phpwhois": "<=4.3.1",
@@ -5875,7 +5880,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-05-10T14:32:12+00:00"
+            "time": "2019-05-17T16:29:20+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
