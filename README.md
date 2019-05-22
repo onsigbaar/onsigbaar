@@ -223,8 +223,10 @@ Content-Type: application/vnd.api+json
     "meta": {
         "copyright": "copyrightⒸ 2019 Onsigbaar",
         "author": [
-            "person1",
-            "person2"
+            {
+                "name": "anonymoussc",
+                "email": "50c5ac69@opayq.com"
+            }
         ]
     }
 }
