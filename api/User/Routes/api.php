@@ -5,6 +5,7 @@
  */
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,10 +34,7 @@ Route::middleware('auth:api')->get('/user', function(Request $request) {
         'link' => $request->fullUrl(),
         'meta' => [
             'copyright' => 'copyrightⒸ ' . date('Y') . ' ' . \Illuminate\Support\Facades\Config::get('app.name'),
-            'author'    => [
-                'person1',
-                'person2',
-            ],
+            'author'    => Config::get('user.api.authors'),
         ],
     ];
 });
