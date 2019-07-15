@@ -22,7 +22,7 @@
     }
   },
   "require"    : {
-    "consigliere/signature": "0.10.*",
-    "consigliere/signal"   : "^1.0"
+    "consigliere/signature": "0.11.*",
+    "consigliere/signal"   : "^1.1"
   }
 }
