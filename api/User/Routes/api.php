@@ -1,11 +1,10 @@
 <?php
 /**
  * Copyright(c) 2019. All rights reserved.
- * Last modified 5/16/19 12:56 PM
+ * Last modified 5/17/19 5:43 AM
  */
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Config;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +20,7 @@ use Illuminate\Support\Facades\Config;
 Route::middleware('auth:api')->get('/user', function(Request $request) {
     $user = $request->user();
 
-    return [
+    $userResponse = [
         'data' => [
             'type'       => 'users',
             'id'         => $user->uuid,
@@ -31,10 +30,12 @@ Route::middleware('auth:api')->get('/user', function(Request $request) {
                 'email'    => $user->email,
             ],
         ],
-        'link' => $request->fullUrl(),
+        'links' => $request->fullUrl(),
         'meta' => [
-            'copyright' => 'copyrightⒸ ' . date('Y') . ' ' . \Illuminate\Support\Facades\Config::get('app.name'),
-            'author'    => Config::get('user.api.authors'),
+            'copyright' => 'copyrightⒸ ' . date('Y') . ' ' . config('app.name'),
+            'author'    => config('user.api.authors'),
         ],
     ];
+
+    return response()->Api($userResponse);
 });

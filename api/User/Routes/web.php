@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,6 +9,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+/**
+ * Copyright(c) 2019. All rights reserved.
+ * Last modified 4/20/19 6:17 PM
+ */
 
 Route::prefix('user')->group(function() {
     // Route::get('/', 'UserController@index');
