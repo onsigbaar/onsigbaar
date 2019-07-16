@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 use Laravel\Passport\Passport;
 use Carbon\Carbon;
 
@@ -33,14 +34,18 @@ class AuthServiceProvider extends ServiceProvider
         });
 
         if (class_exists(\App\Components\Scaffold\Providers\ScaffoldServiceProvider::class)) {
-            $permissions = \App\Components\Scaffold\Entities\Permission::where('id', '>', 0)->pluck('key');
-            $scopes      = [];
+            if (Schema::hasTable('permissions')) {
+                if (class_exists(\App\Components\Scaffold\Entities\Permission::class)) {
+                    $permissions = \App\Components\Scaffold\Entities\Permission::where('id', '>', 0)->pluck('key');
+                    $scopes      = [];
 
-            foreach ($permissions as $permit) {
-                $scopes[$permit] = ucwords(str_replace('_', ' ', $permit));
+                    foreach ($permissions as $permit) {
+                        $scopes[$permit] = ucwords(str_replace('_', ' ', $permit));
+                    }
+
+                    Passport::tokensCan($scopes);
+                }
             }
-
-            Passport::tokensCan($scopes);
         }
 
         Passport::tokensExpireIn(Carbon::now()->addMinutes(10));
