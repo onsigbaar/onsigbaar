@@ -80,9 +80,17 @@
             "@app-artisan-migrate", "@app-artisan-db-seed", "@app-passport-install"
         ],
         "app-scaffold": [
-            "@app-require-scaffold", "@app-install-package", "@app-set-admin", "@app-publish-vendor-views"
+            "@app-require-scaffold",
+            "@app-publish-scaffold-dbseeds",
+            "@app-install-package",
+            "@app-set-admin",
+            "@app-publish-vendor-views",
+            "@app-publish-scaffold-migration",
+            "@app-artisan-migrate"
         ],
         "app-require-scaffold": "@composer require consigliere/scaffold",
+        "app-publish-scaffold-dbseeds":"@php artisan vendor:publish --tag=scaffold_dbseeds",
+        "app-publish-scaffold-migration":"@php artisan vendor:publish --tag=scaffold_migration",
         "app-install-package": "@php artisan voyager:install --with-dummy",
         "app-set-admin": "@php artisan voyager:admin user@api.com",
         "app-publish-vendor-views": "@php artisan vendor:publish --tag=vendor_views",
