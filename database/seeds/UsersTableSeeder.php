@@ -24,7 +24,7 @@ class UsersTableSeeder extends Seeder
         \DB::table('users')->insert(array (
             0 =>
             array (
-                'uuid'              => Uuid::generate(5, 'user', Uuid::NS_DNS),
+                'uuid'              => randomUuid(),
                 'username'          => 'user',
                 'name'              => 'user',
                 'email'             => 'user@api.com',
