@@ -293,13 +293,15 @@ The data saved and emailed will include the user ID, request URL, request method
 
 ### Related resources
 
-- Oauth2 password grants implementation for this repo located in [here](https://github.com/consigliere/Passerby)
-- Log message into database through event subscribe using [signal](https://github.com/consigliere/Signal)
+- Api module [Authentication](https://github.com/consigliere/Passerby)
+- Api module [Authorization](https://github.com/consigliere/Scaffold)
+- [Logging](https://github.com/consigliere/Signal)
 - [Modules](https://github.com/onsigbaar/components)
 - [Framework](https://github.com/onsigbaar/framework)
-- [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3)
+- [Resource Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3)
 - [Which grants](https://rn.netlify.com/blog/oauth2-grants.html)
-- Postman [API Docs](https://documenter.getpostman.com/view/1015471/S1EH21nx)
+- Postman Authentication [API Docs](https://documenter.getpostman.com/view/1015471/S1EH21nx?version=latest)
+- Postman Authorization [API Docs](https://documenter.getpostman.com/view/1015471/S1LyVTUs?version=latest)
 
 ---
 
