@@ -1,11 +1,10 @@
 <?php
 /**
  * Copyright(c) 2019. All rights reserved.
- * Last modified 2/28/19 6:16 AM
+ * Last modified 7/19/19 12:31 AM
  */
 
 use Illuminate\Database\Seeder;
-use Webpatser\Uuid\Uuid;
 
 class UsersTableSeeder extends Seeder
 {
