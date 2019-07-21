@@ -1,7 +1,7 @@
 <?php
 /**
  * Copyright(c) 2019. All rights reserved.
- * Last modified 5/17/19 5:43 AM
+ * Last modified 7/19/19 12:30 AM
  */
 
 use Illuminate\Http\Request;
@@ -21,7 +21,7 @@ Route::middleware('auth:api')->get('/user', function(Request $request) {
     $user = $request->user();
 
     $userResponse = [
-        'data' => [
+        'data'  => [
             'type'       => 'users',
             'id'         => $user->uuid,
             'attributes' => [
@@ -31,7 +31,7 @@ Route::middleware('auth:api')->get('/user', function(Request $request) {
             ],
         ],
         'links' => $request->fullUrl(),
-        'meta' => [
+        'meta'  => [
             'copyright' => 'copyrightⒸ ' . date('Y') . ' ' . config('app.name'),
             'author'    => config('user.api.authors'),
         ],
