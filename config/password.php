@@ -1,14 +1,14 @@
 <?php
 /**
  * Copyright(c) 2019. All rights reserved.
- * Last modified 3/21/19 5:53 AM
+ * Last modified 7/22/19 3:51 AM
  */
 
 return [
     'name'         => 'Passerby',
     'refreshToken' => [
         'cookie' => [
-            'httpOnly' => env('COOKIE_HTTP_ONLY', true),
+            'httpOnly' => env('COOKIE_HTTP_ONLY', false),
             'expire'   => 864000 // 864000 value will make the cookies expire in 10 days
         ],
     ],
