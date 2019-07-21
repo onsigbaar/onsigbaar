@@ -5,8 +5,8 @@ with optional [Voyager admin dashboard](https://laravelvoyager.com/) that includ
 
 ---
 
-- [Authorization API](https://documenter.getpostman.com/view/1015471/S1EH21nx)
-- [Authentication API](https://documenter.getpostman.com/view/1015471/S1LyVTUs)
+- [Authorization API](https://github.com/consigliere/Passerby)
+- [Authentication API](https://github.com/consigliere/Scaffold)
 - [Install](#install)
     - [CLI](#cli)
     - [Create the database](#create-the-database)
