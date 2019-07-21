@@ -1,6 +1,6 @@
 ## Onsigbaar
 
-Laravel Passport OAuth2 API Server authentication using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
+Laravel Passport OAuth2 API Server authorization using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
 with optional laravel admin dashboard that includes user-permission-role, GUI for CRUD operations, a media manager, menu builder, and much more.
 
 ---
@@ -195,6 +195,8 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjIwYWRmMDZjZD
     }
 }
 ```
+
+---
 
 ## Log and send all error/ exception to user email
 
