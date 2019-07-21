@@ -66,20 +66,22 @@
     "minimum-stability": "dev",
     "prefer-stable"    : true,
     "scripts"          : {
-        "post-autoload-dump": [
+        "post-autoload-dump"            : [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
         ],
-        "post-root-package-install": [
+        "post-root-package-install"     : [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
-        "post-create-project-cmd": [
+        "post-create-project-cmd"       : [
             "@php artisan key:generate --ansi"
         ],
-        "passport-install": [
-            "@app-artisan-migrate", "@app-artisan-db-seed", "@app-passport-install"
+        "passport-install"              : [
+            "@app-artisan-migrate",
+            "@app-artisan-db-seed",
+            "@app-passport-install"
         ],
-        "app-scaffold": [
+        "app-scaffold"                  : [
             "@app-require-scaffold",
             "@app-publish-scaffold-dbseeds",
             "@app-install-package",
@@ -88,14 +90,14 @@
             "@app-publish-scaffold-migration",
             "@app-artisan-migrate"
         ],
-        "app-require-scaffold": "@composer require consigliere/scaffold",
-        "app-publish-scaffold-dbseeds":"@php artisan vendor:publish --tag=scaffold_dbseeds",
-        "app-publish-scaffold-migration":"@php artisan vendor:publish --tag=scaffold_migration",
-        "app-install-package": "@php artisan voyager:install --with-dummy",
-        "app-set-admin": "@php artisan voyager:admin user@api.com",
-        "app-publish-vendor-views": "@php artisan vendor:publish --tag=vendor_views",
-        "app-artisan-migrate": "@php artisan migrate",
-        "app-artisan-db-seed": "@php artisan db:seed",
-        "app-passport-install": "@php artisan passport:install"
+        "app-require-scaffold"          : "@composer require consigliere/scaffold",
+        "app-publish-scaffold-dbseeds"  : "@php artisan vendor:publish --tag=scaffold_dbseeds",
+        "app-publish-scaffold-migration": "@php artisan vendor:publish --tag=scaffold_migration",
+        "app-install-package"           : "@php artisan voyager:install --with-dummy",
+        "app-set-admin"                 : "@php artisan voyager:admin user@api.com",
+        "app-publish-vendor-views"      : "@php artisan vendor:publish --tag=vendor_views",
+        "app-artisan-migrate"           : "@php artisan migrate",
+        "app-artisan-db-seed"           : "@php artisan db:seed",
+        "app-passport-install"          : "@php artisan passport:install"
     }
 }
