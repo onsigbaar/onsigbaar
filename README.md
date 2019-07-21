@@ -1,7 +1,7 @@
 ## Onsigbaar
 
 Laravel Passport OAuth2 API Server authorization using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
-with optional laravel admin dashboard that includes user-permission-role, GUI for CRUD operations, a media manager, menu builder, and much more.
+with optional [Voyager admin dashboard](https://laravelvoyager.com/) that includes user-permission-role, GUI for CRUD operations, a media manager, menu builder, and much more.
 
 ---
 
@@ -11,6 +11,7 @@ with optional laravel admin dashboard that includes user-permission-role, GUI fo
     - [CLI](#cli)
     - [Create the database](#create-the-database)
     - [Passport install](#passport-install)
+    - [Install Voyager](#install-voyager)
 - [Api](#api)
     - [CLI](#cli)
     - [Authenticate users](#authenticate-users)
@@ -26,6 +27,7 @@ with optional laravel admin dashboard that includes user-permission-role, GUI fo
         - [Http request](#http-request)
         - [Http response](#http-response)
 - [Log and send all error/ exception to user email](#log-and-send-all-error-exception-to-user-email)
+- [API Tests](#api-tests)
 - [Related resources](#related-resources)
 
 
@@ -63,6 +65,12 @@ PERSONAL_CLIENT_ID=
 PERSONAL_CLIENT_SECRET=
 PASSWORD_CLIENT_ID=
 PASSWORD_CLIENT_SECRET=
+```
+
+### Install Voyager
+
+```bash
+composer app-scaffold
 ```
 
 ---
@@ -263,17 +271,22 @@ public function report(Exception $exception)
 Global application error exception will be saved into the database and sent to user email.
 The data saved and emailed will include the user ID, request URL, request method, client IP, browser, browser version, user OS, etc.
 
+## API Tests
+
+Api tests refer to [Api authorization tests](https://github.com/consigliere/Passerby#api-tests) and [Api authentication tests](https://github.com/consigliere/Scaffold#api-testing)
+
 ## Related resources
 
+- [Voyager Admin Dashboard](https://laravelvoyager.com/)
+- [Laravel-Modules](https://nwidart.com/laravel-modules/v5/introduction)
 - Api module [Authentication](https://github.com/consigliere/Passerby)
 - Api module [Authorization](https://github.com/consigliere/Scaffold)
+- Postman Authentication [API Docs](https://documenter.getpostman.com/view/1015471/S1EH21nx?version=latest)
+- Postman Authorization [API Docs](https://documenter.getpostman.com/view/1015471/S1LyVTUs?version=latest)
 - [Logging](https://github.com/consigliere/Signal)
-- [Modules](https://github.com/onsigbaar/components)
 - [Framework](https://github.com/onsigbaar/framework)
 - [Resource Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3)
 - [Which grants](https://rn.netlify.com/blog/oauth2-grants.html)
-- Postman Authentication [API Docs](https://documenter.getpostman.com/view/1015471/S1EH21nx?version=latest)
-- Postman Authorization [API Docs](https://documenter.getpostman.com/view/1015471/S1LyVTUs?version=latest)
 
 ---
 
