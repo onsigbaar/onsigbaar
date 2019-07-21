@@ -1,11 +1,15 @@
 <?php
+/**
+ * Copyright(c) 2019. All rights reserved.
+ * Last modified 7/19/19 12:34 AM
+ */
 
 namespace App\Providers;
 
+use Carbon\Carbon;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Laravel\Passport\Passport;
-use Carbon\Carbon;
 
 class AuthServiceProvider extends ServiceProvider
 {
