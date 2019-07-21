@@ -1,4 +1,8 @@
 <?php
+/**
+ * Copyright(c) 2019. All rights reserved.
+ * Last modified 7/22/19 3:50 AM
+ */
 
 namespace App\Http\Middleware;
 
@@ -12,6 +16,6 @@ class EncryptCookies extends Middleware
      * @var array
      */
     protected $except = [
-        'refreshToken'
+        //
     ];
 }
