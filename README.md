@@ -1,6 +1,12 @@
+## Onsigbaar
+
+Laravel Passport OAuth2 API Server authentication using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
+with optional laravel admin dashboard that includes user-permission-role, GUI for CRUD operations, a media manager, menu builder, and much more.
+
+---
+
 - [Authorization API](https://documenter.getpostman.com/view/1015471/S1EH21nx)
 - [Authentication API](https://documenter.getpostman.com/view/1015471/S1LyVTUs)
-
 - [Install](#install)
     - [CLI](#cli)
     - [Create the database](#create-the-database)
@@ -22,11 +28,6 @@
 - [Log and send all error/ exception to user email](#log-and-send-all-error-exception-to-user-email)
 - [Related resources](#related-resources)
 
-
-## Onsigbaar
-
-Laravel Passport OAuth2 API Server authentication using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
-with optional laravel admin dashboard that includes user-permission-role, GUI for CRUD operations, a media manager, menu builder, and much more.
 
 ## Install
 
