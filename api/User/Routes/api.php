@@ -30,7 +30,9 @@ Route::middleware('auth:api')->get('/user', function(Request $request) {
                 'email'    => $user->email,
             ],
         ],
-        'links' => $request->fullUrl(),
+        'links' => [
+            'self' => $request->fullUrl(),
+        ],
         'meta'  => [
             'copyright' => 'copyrightⒸ ' . date('Y') . ' ' . config('app.name'),
             'author'    => config('user.api.authors'),
