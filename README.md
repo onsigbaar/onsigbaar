@@ -175,7 +175,7 @@ After successful login send get request to `http://localhost:8000/api/user/` to 
 GET /api/user HTTP/1.1
 Host: localhost:8000
 Accept: application/vnd.api+json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjIwYWRmMDZjZDA0OTI1MzI4NmQzOGI3MDYyYzhlYmI3MmNmOTQ5ZjNjMTQyNTIxZWYzNmY1YTUzNzQ5ZGFiNjg3YTQ1OGZiYjA1ZWE3OGFiIn0.eyJhdWQiOiIyIiwianRpIjoiMjBhZGYwNmNkMDQ5MjUzMjg2ZDM4YjcwNjJjOGViYjcyY2Y5NDlmM2MxNDI1MjFlZjM2ZjVhNTM3NDlkYWI2ODdhNDU4ZmJiMDVlYTc4YWIiLCJpYXQiOjE1NjMxNjEwMjMsIm5iZiI6MTU2MzE2MTAyMywiZXhwIjoxNTYzMTYxNjIzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Vx4K3Tp1XMTGz_pJx9JFuTZ9YuPB8WfFpX4hH701PR5ELnYZ3m71fQdL76jxuuDt37AWoSJacJeh5BYcwZsYRkg9PkHwIjmG7Hl3F-fXyri144VxocArkY_yy7Qt5M62bevMUk7vU0lT5P7qz3Nq8QEIQz78PZ6kZbp2J6M28ineXB0ZSkQ4wEHcZOd-1DjwhTUR-N0_cUS8ivXTM6XrJCEu43dHsv7WA05Iy11mZsnJuS3GUmkui5kCHzDsQXeqp7s50JQo0WsGU_JOsfY0QLFxnwA7uu1rBq2feaFDOFW60T9ThkUwsyCz3_VDeOonWCBpzYHBk20Qnd2_Hm2cTK7eJLJ0SV1PxUiMBP8NngiA61ffSeETcMOqfjqZJ3QJuDshwWSIC4jwFkw01jT9ArJFRJLTQ3EQ1HnAs1MfxY0aY3_k_aR3FOhlznpWLtWYS2nrSYemYF1WJxji4wQwf_6faauyzRwfht55Sq8CA7P5Wquj0QkFJnp3aLp5b37w-Vkym6iphm5yNNxYp_g5C3Ke7aeGQXGUs9Etb4mOsgbY0efk-YHyiIcWgAQwECqhoQavfTDYN_H5hTSN2ybStq9V2szTjo6J46WlMnxTVr_7u9RNvIBBVKgjI-eTMynPKMHSytYm5Z9E8OeD9esnqfCtF_i_IgIiSovNn0DuGv8
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjEzYjYwZTI5NTkyOTNkMjgyMGJkNDNjMWU3N2RiYTFiNzQzZGZiZDc3OGMwMjA4MTZhODk2ODAxZWRhODEzYzc0OTQzZTQxODMxMWY0YjVjIn0.eyJhdWQiOiI2IiwianRpIjoiMTNiNjBlMjk1OTI5M2QyODIwYmQ0M2MxZTc3ZGJhMWI3NDNkZmJkNzc4YzAyMDgxNmE4OTY4MDFlZGE4MTNjNzQ5NDNlNDE4MzExZjRiNWMiLCJpYXQiOjE1NjM3NTcxMTcsIm5iZiI6MTU2Mzc1NzExNywiZXhwIjoxNTYzNzU3NzE0LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wDWtL9I2VUZg49ah7Ff5hQpP7AlB82pWvuBQiD7RZVkzS_hSJ3Xkboz1vFjnOES9b5cIct2Dskz4sWSS_JBJmz7KILc4Py9D4PgAIPUCXVrgy_R7I23VwfTVA_3olVt-XW3nQsvQp2o9tu-0N5rFH6kqK8t2CevKxuWabUtFj7QlLyDnPy06D0zAfUU1lrwRYHv8BgID_hFxIxbO__lHHUgzVOOe-NtfXT5Ru64Mm9G-PqarZRpmfXy5GWthoHvzZxkHrUNiGoeaThjsDE2-AXqhIWDh02JlkgPTKJwjTaokHLIJk_2dI-kAIbHl4GtuNX6jT1-D5Khkq_FJWRFj3RYzpeZGBPFoOr4iJOpTSrfD5qtE_3eldS1jGbhWjsWUIGT3LDEts6bsnQssy2qPSNoJnqhO3nGsaKSg2nfa1DHBtLUzddLJRf3Ue5EdPugKyfG457LCnpHlmXQl8wDu5GEyl8cmPa6Bxqg5sqzEbBFe44bVqTmtvTh8b3hgMRiLnnwoiuxrHRpDJWeZHfVo1WwTTfpgn4sbbvcO3sWmDv8HeFsPVLQSi1LegCkim3Pps08X103BSDsWO0vPGOe_cP9lQOxgYlnHBlOHAtCjXtxrSqPnjZL1A0tm2iaA9R4SKAhDsgehGmLD3ydwc13pluQHyPw9BgMcu_76uZmJe_I
 ```
 
 #### Http response
@@ -191,9 +191,11 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjIwYWRmMDZjZD
             "email": "user@api.com"
         }
     },
-    "links": "http://localhost:8000/api/user",
+    "links": {
+        "self": "http://localhost:8000/api/user"
+    },
     "meta": {
-        "copyright": "copyrightⒸ 2019 Laravel",
+        "copyright": "copyrightⒸ 2019 Onsigbaar",
         "author": [
             {
                 "name": "anonymoussc",
