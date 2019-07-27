@@ -69,7 +69,7 @@ PASSWORD_CLIENT_SECRET=
 
 ### (Optional) Install Voyager/ Authorization API
 
-[Api module Authorization](https://github.com/consigliere/Scaffold)
+Authorization [API](https://github.com/consigliere/Scaffold)
 
 ```bash
 composer app-scaffold
