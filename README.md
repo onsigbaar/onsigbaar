@@ -11,21 +11,21 @@ with optional [Voyager admin dashboard](https://laravelvoyager.com/) that includ
     - [CLI](#cli)
     - [Create the database](#create-the-database)
     - [Passport install](#passport-install)
-    - [Install Voyager](#install-voyager)
+    - [(Optional) Install Voyager/ Authorization API](#optional-install-voyager-authorization-api)
 - [Api](#api)
     - [CLI](#cli)
     - [Authenticate users](#authenticate-users)
         - [Http request](#http-request)
-        - [Http response](#http-response)
+        - [Http response 200](#http-response-200)
     - [Refresh token](#refresh-token)
         - [Http request](#http-request)
-        - [Http response](#http-response)
+        - [Http response 200](#http-response-200)
     - [Logout user](#logout-user)
         - [Http request](#http-request)
-        - [Http response](#http-response)
+        - [Http response 204](#http-response-204)
     - [Protected resources endpoint](#protected-resources-endpoint)
         - [Http request](#http-request)
-        - [Http response](#http-response)
+        - [Http response 200](#http-response-200)
 - [Log and send all error/ exception to user email](#log-and-send-all-error-exception-to-user-email)
 - [API Tests](#api-tests)
 - [Related resources](#related-resources)
@@ -101,13 +101,13 @@ Content-Type: application/vnd.api+json
 }
 ```
 
-#### Http response
+#### Http response 200
 
 ```json
 {
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImU1NjFjYzQxYWFjZWExNGIyM2Y4YmY1OWJiYjgzNDVhNWJjNjU1NmRmZmIwZTY5OWYwZjc3NDA1ZTI2MzhiM2VkMDg5ZTFkMGVjYTU2ZmJhIn0.eyJhdWQiOiIyIiwianRpIjoiZTU2MWNjNDFhYWNlYTE0YjIzZjhiZjU5YmJiODM0NWE1YmM2NTU2ZGZmYjBlNjk5ZjBmNzc0MDVlMjYzOGIzZWQwODllMWQwZWNhNTZmYmEiLCJpYXQiOjE1NTc5ODAyNTQsIm5iZiI6MTU1Nzk4MDI1NCwiZXhwIjoxNTU3OTg3NDU0LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.IhRPM8DOGiqD9PG24-WHj14Dk0MA-kZjp8pf8t_yko6reZHd6PVzwOKGrntpZXfNhF8Ua-9C_gsD8JaxOXoRq5WKIwcq2XiuIa1sNiuYjRtGHX9kbgczkSYkbmNTUlHvt-GQTADh5v3HwnWUlTKOr_qZUaoHaCg1ymA2hkvXWhDSvAkc4htYeWG38RgQRISDmhXAyUkO3yF8zCuNP_UtRpJDT12pGx9FW0gEJWEXOr4X-0U91CJ4GGBy3Z4Igpy-AyFivB7Zk5grtTvvpDJc_QiKi6UToDiSIDce0Nnyhu9jpC3Lgof64ah70TEW1BwyWtPGgwI7BFg27jAbq6GLwr_-fF-_cwWF9mA21HeePU7q25Lsxr-SflujL_CvcfnKBpilmpbXTuGUTAmF-9fpePY06U73rKGa9K8rlewaze3Kkf_NSG2R0LrcFKeJrKdwrNdqmxeS8Va1Lbp3CCn_sLL-WML1lQOuI9rHgoAT6QjSw_gxIldPmPAqEkAh5aagdI00YMvSAP03OVxtllLHSR0gDAuJk-EgNaDCBy4uxq2I8xiJbPdN6KKeCpjepSGsQ1YYNkodwcNh4P5MaHVahAF26VYN8quo0dXxMQ65XxGw6Xyf2NquM0PCQTnN39q6YxsNbHOpyBB9lHJk0vG-uugjo0icRW8Is2eyiDYMbsA",
     "refresh_token": "def5020085e818b57ce4820d959a3bd7160ab7460496d27be368821d0179033f763ff13fe5975c5888d98b50d7400a67aef4bda18f76c3042b34ac05080de4af9b162fc27227b5795546d74e91580b6420520b6919d3ec6d26240e8b85325f1e9843aa6d3a3c0477530b22338a4b5208c1a97f7f265acaabfaf3644daa01f6d691111f4d89374c518a36138f1e5fc80a87d41a880ac59a4999d4ed4831245d640d7142984d4f50229467b7614141116f1cf297cf13a2294ad3ab486e6cc6be2958abab70fcac627dabbe3c3f73a363de1843655bf1937f4afd6b7539ce694c9a9011bad97830bd8134966db489f9280b7cdc030b116ffcae8201fc887fa3e8f2ddfa7db507019521b94dd24fefcfac60c6cbc76cdee40b0d6869b642bc48b9168c98a63007cb85b4eabd8f1e68cb72ff764033cd9bb54df393e84fde9215a275d17af858723344b81dee097a25755feedba43ddffb595641c40907da3d761acce1",
-    "expires_in": 7200
+    "expires_in": 600
 }
 ```
 
@@ -126,7 +126,7 @@ Content-Type: application/vnd.api+json
 }
 ```
 
-#### Http response
+#### Http response 200
 
 ```json
 {
@@ -147,7 +147,7 @@ Accept: application/vnd.api+json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImU5Mjg2Nzg1MGU0YjA5ZDA0YzFhZDlmNzRiNTRlOTk2OGQxOWY3OWE4ZjMxMTVmZmFmNGUxMWQwMjJlYWMwMGU1MTJhNWM4MjMwY2Q5NDM1In0.eyJhdWQiOiIyIiwianRpIjoiZTkyODY3ODUwZTRiMDlkMDRjMWFkOWY3NGI1NGU5OTY4ZDE5Zjc5YThmMzExNWZmYWY0ZTExZDAyMmVhYzAwZTUxMmE1YzgyMzBjZDk0MzUiLCJpYXQiOjE1NjMxNjAxODQsIm5iZiI6MTU2MzE2MDE4NCwiZXhwIjoxNTYzMTYwNzgzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.m5YW72JVik95Tdqvt1l8kghlMf4RysblWw-dzwzafMZjmz-vxXeqboSS6MIbb6n_mWfbDxZ_3yAvqv5mUZxRSV2eXg-Fw_kOBdgwOn95gD1PEsarDT4haU0BC_u1Y5f5IzOfY6Tkh_Z4y5RNTkDd5H4zEYYZNoFPYKQWUvZibxQTYJ3fPVOLTZ_te_xJJ4jMD-l6POzZCvZvBE5OL7bxIcqEGjwFVjabrTD6iXpAL1HYh4bnj6325TqSipcN7d74OoKH7EGR-D6aLk4Q18O47gA3q4tK0c9QKeZYJCeZ9NQ5TsUTo2StEt0nruJRcg4Fg7BuMOJnPdwHG2F_vvxIM8ptBHgH6tzRrY2ai_RRjIhiZu8QGM1cxQbwSq62Fct9XtuegFpM8Vye2oFLFmgEQkWHDN684jSg15EVokTkc_utL7kEGP9lVKcSSmOk6-iXOxapTLeUYqB08QWEx7VCl9IdZezuVBHSKF5O1yx87hDkkV2GW7qHRskdT-faMA7UpqadMCZgbVgyj8zbL7sP8jaXdPzb8vCIYFIjDSJQqBkE4BxyQmz_0sxMgRqBxze-h0gf9CxbR1tEYGigkZy3myVhqGxWalnkwF4FkUsPGMA3aFq5mtrNQTD0UaC-_OkUqMP6ZYiCDuqNXN_9LDd4ZWgmgmd1NCXlWS2G6uZAGoE
 ```
 
-#### Http response
+#### Http response 204
 
 ```json
 
@@ -180,7 +180,7 @@ Accept: application/vnd.api+json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjEzYjYwZTI5NTkyOTNkMjgyMGJkNDNjMWU3N2RiYTFiNzQzZGZiZDc3OGMwMjA4MTZhODk2ODAxZWRhODEzYzc0OTQzZTQxODMxMWY0YjVjIn0.eyJhdWQiOiI2IiwianRpIjoiMTNiNjBlMjk1OTI5M2QyODIwYmQ0M2MxZTc3ZGJhMWI3NDNkZmJkNzc4YzAyMDgxNmE4OTY4MDFlZGE4MTNjNzQ5NDNlNDE4MzExZjRiNWMiLCJpYXQiOjE1NjM3NTcxMTcsIm5iZiI6MTU2Mzc1NzExNywiZXhwIjoxNTYzNzU3NzE0LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.wDWtL9I2VUZg49ah7Ff5hQpP7AlB82pWvuBQiD7RZVkzS_hSJ3Xkboz1vFjnOES9b5cIct2Dskz4sWSS_JBJmz7KILc4Py9D4PgAIPUCXVrgy_R7I23VwfTVA_3olVt-XW3nQsvQp2o9tu-0N5rFH6kqK8t2CevKxuWabUtFj7QlLyDnPy06D0zAfUU1lrwRYHv8BgID_hFxIxbO__lHHUgzVOOe-NtfXT5Ru64Mm9G-PqarZRpmfXy5GWthoHvzZxkHrUNiGoeaThjsDE2-AXqhIWDh02JlkgPTKJwjTaokHLIJk_2dI-kAIbHl4GtuNX6jT1-D5Khkq_FJWRFj3RYzpeZGBPFoOr4iJOpTSrfD5qtE_3eldS1jGbhWjsWUIGT3LDEts6bsnQssy2qPSNoJnqhO3nGsaKSg2nfa1DHBtLUzddLJRf3Ue5EdPugKyfG457LCnpHlmXQl8wDu5GEyl8cmPa6Bxqg5sqzEbBFe44bVqTmtvTh8b3hgMRiLnnwoiuxrHRpDJWeZHfVo1WwTTfpgn4sbbvcO3sWmDv8HeFsPVLQSi1LegCkim3Pps08X103BSDsWO0vPGOe_cP9lQOxgYlnHBlOHAtCjXtxrSqPnjZL1A0tm2iaA9R4SKAhDsgehGmLD3ydwc13pluQHyPw9BgMcu_76uZmJe_I
 ```
 
-#### Http response
+#### Http response 200
 
 ```json
 {
