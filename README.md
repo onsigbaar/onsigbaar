@@ -1,12 +1,12 @@
 ## Onsigbaar
 
-Laravel Passport OAuth2 API Server authorization using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
+Laravel Passport OAuth2 API Server Authentication using [Resouce Owner Password Credential Grant](https://tools.ietf.org/html/rfc6749#section-4.3) 
 with optional [Voyager admin dashboard](https://laravelvoyager.com/) that includes user-permission-role, GUI for CRUD operations, a media manager, menu builder, and much more.
 
 ---
 
-- [Authorization API](https://github.com/consigliere/Passerby)
-- [Authentication API](https://github.com/consigliere/Scaffold)
+- [Authentication API](https://github.com/consigliere/Passerby)
+- [Authorization API](https://github.com/consigliere/Scaffold)
 - [Install](#install)
     - [CLI](#cli)
     - [Create the database](#create-the-database)
@@ -67,7 +67,9 @@ PASSWORD_CLIENT_ID=
 PASSWORD_CLIENT_SECRET=
 ```
 
-### Install Voyager
+### (Optional) Install Voyager/ Authorization API
+
+[Api module Authorization](https://github.com/consigliere/Scaffold)
 
 ```bash
 composer app-scaffold
@@ -275,7 +277,7 @@ The data saved and emailed will include the user ID, request URL, request method
 
 ## API Tests
 
-Api tests refer to [Api authorization tests](https://github.com/consigliere/Passerby#api-tests) and [Api authentication tests](https://github.com/consigliere/Scaffold#api-testing)
+Api tests refer to [Api authentication tests](https://github.com/consigliere/Passerby#api-tests) and [Api authorization tests](https://github.com/consigliere/Scaffold#api-testing)
 
 ## Related resources
 
